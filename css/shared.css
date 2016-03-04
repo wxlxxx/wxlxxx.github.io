@@ -20,11 +20,12 @@ a:focus{
 	font-size: 24px;
 	font-weight: bold;
 }
-.navbar-nav li.active a{
-	color: red !important;
+#head-navbar .navbar-nav li.active a{
+	color: #b61d1d;
 }
+
 #head-navbar a:hover{
-	color: red;
+	color: #b61d1d;
 	background-color: transparent !important;
 }
 #head-navbar a:focus{
@@ -101,6 +102,19 @@ a:focus{
 	transition: all 0.2s linear 0s;
 }
 .list-group-item.active{
-	padding: 20px 25px;
+	padding: 20px 5px;
 	font-size: 24px;
+	text-align: center;
+}
+
+#content-text h4{
+	padding: 15px;
+}
+#content-text p{
+	padding: 0 40px;
+	line-height: 2;
+}
+#content-text img{
+	width: 80%;
+	height: auto;
 }

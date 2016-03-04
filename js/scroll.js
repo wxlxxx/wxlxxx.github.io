@@ -4,31 +4,28 @@ $(document).ready(function(){
 		$(this).addClass('active');
 	});
 	$('#list-group').children().eq(0).click(function(){
-		$('#content-text').animate({scrollTop: '0px'}, 200);
+		$('html,body').animate({scrollTop: '0px'}, 400);
 	});
 	$('#list-group').children().eq(1).click(function(){
-		$('#content-text').animate({scrollTop: '600px'}, 200);
+		$('html,body').animate({scrollTop: '700px'}, 400);
 	});
 	$('#list-group').children().eq(2).click(function(){
-		$('#content-text').animate({scrollTop: '1200px'}, 200);
+		$('html,body').animate({scrollTop: '2400px'}, 400);
 	});
-	$('#list-group').children().eq(3).click(function(){
-		$('#content-text').animate({scrollTop: '1800px'}, 200);
-	});
+	// $('#list-group').children().eq(3).click(function(){
+	// 	$('html,body').animate({scrollTop: '600px'}, 200);
+	// });
 
-	$("#content-text").scroll(function() {
-		if ($('#content-text').scrollTop()<600) {
+	$(window).scroll(function() {
+		if ($('html,body').scrollTop()<700) {
 			$('#list-group a').removeClass('active');
 			$('#list-group').children().eq(0).addClass('active');
-		} else if ($('#content-text').scrollTop()<1200){
+		} else if ($('html,body').scrollTop()<2200){
 			$('#list-group a').removeClass('active');
 			$('#list-group').children().eq(1).addClass('active');
-		} else if ($('#content-text').scrollTop()<1800){
+		} else{
 			$('#list-group a').removeClass('active');
 			$('#list-group').children().eq(2).addClass('active');
-		} else if ($('#content-text').scrollTop()<2400){
-			$('#list-group a').removeClass('active');
-			$('#list-group').children().eq(3).addClass('active');
 		};
 	});
 

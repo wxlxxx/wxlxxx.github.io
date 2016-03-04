@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>html/css-demo</title>
+	<title>front-demo</title>
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/shared.css" rel="stylesheet">
 </head>
@@ -27,15 +27,15 @@
 					<li><a href="index.html">Demo1 <span class="sr-only">(current)</span></a></li>
 					<li><a href="#">Demo2</a></li>
 					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Html/Css <span class="caret"></span></a>
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">前端文档<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="html_css.html">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
+							<li><a href="html_css.html#a1">深入理解line-height</a></li>
+							<li><a href="html_css.html#a2">深入理解vertical-align</a></li>
+							<li><a href="html_css.html#a3">深入理解relative</a></li>
+							<!-- <li role="separator" class="divider"></li>
+							<li><a href="#">深入理解</a></li>
 							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">One more separated link</a></li>
+							<li><a href="#">深入理解</a></li> -->
 						</ul>
 					</li>
 				</ul>
@@ -51,98 +51,88 @@
 						</ul>
 					</li>
 					<li class="dropdown">
-						<a href="#">Ruby on Rails</a>
+						<a href="#">Rails建站</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-
-	<div id="content-text" class="content" style="background-color:#FFF;height:500px;overflow:auto;">
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
+	<div id="content-text" class="content" style="background-color:#FFF;">
+		<div id="a1" style="height:50px;"></div>
+		<h4 >深入理解line-height</h4>
+		<p>1.基线：平时写英文单词，对于a,c,e这种只占1个格子的，他们的底边就是基线。基线是任意线定义的根本<br/>
+2.基线的位置与字体的font-family有关，不同的font-family基线的位置是不同的<br/>
+3.line-height:行高指两行基线之间的距离
+行高 基线主要说明基线的问题是行高的标志<br/>
+4.line-height 高度机理: 行高=内容区域+行间距；
+内容区域=字号+字体；<br/>
+5.line-height的各种属性normal默认属性和浏览器和字体有关系，number根据font-size有关系，length直接固定具体长度大小（px，pt，em。。。），percent百分比，inherit继承关系<br/>
+6.body全局数值行高的经验body｛font-size：14px；line-height：1.4286｝是根据20字号下的宋体进行得出来的结论，再次用到了数值和百分比的关系。<br/>
+7.解决图片下面有空白的bug三种解决方法:图片块状话，图片底线对其，行高为零<br/>
+8.行内盒子模型：
+内容区域 content area
+内联盒子 inline box
+行内框盒子（由一个个内联盒子构成 line boxes）
+包含盒子 containing box<br/>
+9.内联元素的高度是由行高决定的
+行高由于其继承性，影响无处不在，即使单行文本也不例外；
+行高只是幕后黑手，高度的表现不是行高，而是内容区域和行间距。<br/>
+10.多行文本的垂直中:.box{text-align:center; line-height:300px;} .box .text{display:inline-block; line-height:normal; text-align:left; vertical-align:middle;}<br/>
+11.大小不固定的图片的垂直居中:.box{text-align:center; line-height:300px;} .box img{vertical-align:middle;}<br/>
+12.vertical-align:middle;只能做到近似居中，因为对齐的线为基线向上1/2 * X处，X对于不同字体的取值不同；</p>
+<hr>
+<div id="a2" style="height:50px;"></div>
+<h4>深入理解vertical-align</h4>
+<p>1.vertical-align的属性：<br/>
+线类（baseline,top,middle,bottom）<br/>
+文本类：(text-top,text-bottom)<br/>
+上标下标类：（sub,super）<br/>
+数值百分比类：（20px,2em,20%,...）<br/>
+2.vertical-align 的百分比值是相对于 line-height 计算的<br/>
+3.css 中支持负值的属性不多:margin letter-spacing word-spacing vertical-align<br/>
+4.vertical- align–数值：在Baseline对齐的基础上、上下偏移对应的数值<br/>
+5.vertical-align – 百分比：在Baseline对齐的基础上,相对行高line-height偏移。<br/>
+6.IE6/7下vertical-align百分比值不支持小数line-height<br/>
+7.vertical-align实现前提：<br/>
+元素不能是block<br/>
+table-cell 的vertical-align 只会作用于自身,<br/>对他里面的子元素不起作用<br/>
+vertical-align 应用于inline 水平（inline & inline-block）和 table-cell 元素<br/>
+绝对定位会脱离文档流，也会导致verticle-align失效<br/>
+display:inline-block;既能支持inline,又能设置高度。<br/>
+8.使图片与容器完美结合：<br/>
+ img 设置为 display:block; margin: 0 auto 
+ vertical-align: top/middle/bottom
+ line-height: 0
+ font-size: 0</p>
+		<img src="images/11.jpg">
+		<p>9.上图第一个盒子的基线是自己的底边缘
+第二个盒子的基线是里面的元素的x-baseline 的基线</p>
+		<img src="images/22.jpg">
+		<p>上图x-baseline 的 line-height 为0 时<br/>
+		当一个 inline-block盒子中没有任何元素，它的基线就是盒子的地边缘，如果盒子里面有元素基线就是元素的底边缘，行高有让文字居中的特性，行高设置为0，高度的区域就变为字符的中心了。</br>
+10.线性属性值：</br>
+inline/inling-block元素：元素底部和整行的底部对齐</br>
+Table-cell元素：单元格底padding边缘和表格行底部对齐</br>
+11.文本类属性值：</br>
+使用基线定位问题在于图标偏上；使用顶线/底线的问题在于受其他内联元素的影响；使用中线需要恰好的文字大小以及兼容性要求不高；使用文本底部较合适，不受行高和其他内联元素的影响vertical-align:text-bottom</br>
+12.vertical-align:top是与父容器相关的,只关注当前元素和父级,前后元素没有直接的影响 默认是基线对齐,盒子的底部和父级content area的底部对齐</p>
+<div id="a3" style="height:50px;"></div>
+<h4>深入理解relative属性</h4>
+<p>1.relative与absolute的关系</br>
+限制left、top、right、bottom定位；</br>
+限制z-index层级；</br>
+限制overflow: hidden对absolute元素无效；</br>
+2.外层relative的z index无视内层z index</br>
+3.relative相对自身的定位</br>
+4.relative的z-index:auto不限制下级的absolute的z-index的</br>
+5.relative要遵循避免原则和最小化原则，即能不用relative则不用，relative作用的div范围越小越好</p>
 	</div>
 
 	<div class="panel-nav">
 		<ul id="list-group" class="list-group" style="margin:0;">
-			<a href="#" class="list-group-item active">title1221221</a>
-			<a href="#" class="list-group-item">title1221221</a>
-			<a href="#" class="list-group-item">title1221221</a>
-			<a href="#" class="list-group-item">title1221221</a>
+			<a href="#" class="list-group-item active">深入理解line-height</a>
+			<a href="#" class="list-group-item">深入理解vertical-align</a>
+			<a href="#" class="list-group-item">深入理解relative</a>
 		</ul>
 	</div>
 
@@ -151,6 +141,6 @@
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.anystretch.min.js"></script>
-	<script src="js/shared.js"></script>
+	<script src="js/scroll.js"></script>
 </body>
 </html>
