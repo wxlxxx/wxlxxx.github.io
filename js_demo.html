@@ -43,18 +43,11 @@
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown active">
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Js<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#">Action</a></li>
-							<li><a href="#">Another action</a></li>
-							<li><a href="#">Something else here</a></li>
-							<li role="separator" class="divider"></li>
-							<li><a href="#">Separated link</a></li>
-						</ul>
+					<li class="active">
+						<a href="js_demo.html">bootstrap.js文档</a>
 					</li>
-					<li class="dropdown">
-						<a href="#">Rails建站</a>
+					<li>
+						<a href="rails.html">Rails建站</a>
 					</li>
 				</ul>
 			</div>
@@ -62,98 +55,165 @@
 	</nav>
 
 	<div id="content-text" class="content" style="background-color:#FFF;">
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<h2>title</h2>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
-		<p>1212</p>
+		<h2>滚动监听</h2>
+		<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">   
+		   <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+		      <ul class="nav navbar-nav">
+		         <li><a href="#one">第一部分</a></li>
+		         <li><a href="#two">第二部分</a></li>
+		         <li><a href="#three">第三部分</a></li>
+		         <li><a href="#four">第四部分</a></li>
+		         
+		      </ul>
+		   </div>
+		</nav>
+		<div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
+		   style="height:200px;overflow:auto; position: relative;">
+		   <h4 id="one">第一部分</h4>
+		   <p>滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。</br>
+		   	其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
+		如果您想要单独引用该插件的功能，那么您需要引用 scrollspy.js。或者，正如 Bootstrap 插件概览 一章中所提到，</br>
+		您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+		   </p>
+		   <h4 id="two">第二部分</h4>
+		   <p>通过 data 属性：向您想要监听的元素（通常是 body）添加 data-spy="scroll"。然后添加带有 Bootstrap .nav 组件的父元素的 ID </br>
+		   	或 class 的属性 data-target。为了它能正常工作，您必须确保页面主体中有匹配您所要监听链接的 ID 的元素存在。
+		   </p>
+		   <h4 id="three">第三部分</h4>
+		   <p>滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。</br>
+		   	其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
+		如果您想要单独引用该插件的功能，那么您需要引用 scrollspy.js。或者，正如 Bootstrap 插件概览 一章中所提到，</br>
+		您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+		   </p>
+		   <h4 id="four">第四部分</h4>
+		   <p>通过 data 属性：向您想要监听的元素（通常是 body）添加 data-spy="scroll"。然后添加带有 Bootstrap .nav 组件的父元素的 ID </br>
+		   	或 class 的属性 data-target。为了它能正常工作，您必须确保页面主体中有匹配您所要监听链接的 ID 的元素存在。
+		   </p>
+		</div>
+		
+		<h2>折叠</h2>
+		<div class="panel-group" id="accordion">
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" 
+		          href="#collapseOne">
+		          点击我进行展开，再次点击我进行折叠。第 1 部分
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseOne" class="panel-collapse collapse in">
+		      <div class="panel-body">
+		        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。</br>
+		        同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。</br>
+		        或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。</br>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" 
+		          href="#collapseTwo">
+		          点击我进行展开，再次点击我进行折叠。第 2 部分
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseTwo" class="panel-collapse collapse">
+		      <div class="panel-body">
+		        1.data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。</br>
+				2.href 或 data-target 属性添加到父组件，它的值是子组件的 id。</br>
+				3.data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。</br>
+		      </div>
+		    </div>
+		  </div>
+		  <div class="panel panel-default">
+		    <div class="panel-heading">
+		      <h4 class="panel-title">
+		        <a data-toggle="collapse" data-parent="#accordion" 
+		          href="#collapseThree">
+		          点击我进行展开，再次点击我进行折叠。第 3 部分
+		        </a>
+		      </h4>
+		    </div>
+		    <div id="collapseThree" class="panel-collapse collapse">
+		      <div class="panel-body">
+		        1.data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。</br>
+				2.href 或 data-target 属性添加到父组件，它的值是子组件的 id。</br>
+				3.data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。</br>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	
+		<h2>提示工具</h2>
+		<p>通过 data 属性：如需添加一个提示工具（tooltip），只需向一个锚标签添加 data-toggle="tooltip" 即可。</br>
+		锚的 title 即为提示工具（tooltip）的文本。默认情况下，插件把提示工具（tooltip）设置在顶部。</p>
+		<p>提示工具（Tooltip）插件不像之前所讨论的下拉菜单及其他插件那样，它不是纯 CSS 插件。</br>
+		如需使用该插件，您必须使用 jquery 激活它（读取 javascript）</br>
+		$(function () { $("[data-toggle='tooltip']").tooltip(); });
+		</p>
+		<h4>工具提示（Tooltip）插件 - 锚</h4>
+		这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" 
+		   title="默认的 Tooltip">
+		   默认的 Tooltip
+		</a>.
+		这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" 
+		   data-placement="left" title="左侧的 Tooltip">
+		   左侧的 Tooltip
+		</a>.
+		这是一个 <a href="#" data-toggle="tooltip" data-placement="top" 
+		   title="顶部的 Tooltip">
+		   顶部的 Tooltip
+		</a>.
+		这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom" 
+		   title="底部的 Tooltip">
+		   底部的 Tooltip
+		</a>.
+		这是一个 <a href="#" data-toggle="tooltip" data-placement="right" 
+		   title="右侧的 Tooltip">
+		   右侧的 Tooltip
+		</a>		
+		<br>		
+		<h4>工具提示（Tooltip）插件 - 按钮</h4>
+		<button type="button" class="btn btn-default" data-toggle="tooltip" 
+		   title="默认的 Tooltip">
+		   默认的 Tooltip
+		</button>
+		<button type="button" class="btn btn-default" data-toggle="tooltip" 
+		   data-placement="left" title="左侧的 Tooltip">
+		   左侧的 Tooltip
+		</button>
+		<button type="button" class="btn btn-default" data-toggle="tooltip" 
+		   data-placement="top" title="顶部的 Tooltip">
+		   顶部的 Tooltip
+		</button>
+		<button type="button" class="btn btn-default" data-toggle="tooltip" 
+		   data-placement="bottom" title="底部的 Tooltip">
+		   底部的 Tooltip
+		</button>
+		<button type="button" class="btn btn-default" data-toggle="tooltip" 
+		   data-placement="right" title="右侧的 Tooltip">
+		   右侧的 Tooltip
+		</button>
 	</div>
 
-	<div class="panel-nav">
-		<ul id="list-group" class="list-group" style="margin:0;">
-			<a href="#" class="list-group-item active">title1221221</a>
-			<a href="#" class="list-group-item">title1221221</a>
-			<a href="#" class="list-group-item">title1221221</a>
-			<a href="#" class="list-group-item">title1221221</a>
-		</ul>
-	</div>
+	
+	<nav id="foot" class="navbar navbar-inverse navbar-static-bottom">
+	  <div class="container">
+	    <p class="navbar-text">
+	    	<i class="glyphicon glyphicon-earphone"></i>18346827602
+	    	<i class="glyphicon glyphicon-envelope"></i>964397251@qq.com
+	    </p>
+	  </div>
+	</nav>
 
 
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.anystretch.min.js"></script>
-	<script src="js/scroll.js"></script>
+	<script>
+   		$(function () { $("[data-toggle='tooltip']").tooltip(); });
+	</script>
 </body>
 </html>
