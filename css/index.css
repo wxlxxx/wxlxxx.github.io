@@ -55,6 +55,11 @@
 	background-attachment: fixed;
 	background-size: cover;
 }
+@media(max-width:767px ) {
+	.bgimg{
+		background-position: center;
+	}
+}
 .navbar{
 	background-color: rgba(0,0,0,0);
 }
