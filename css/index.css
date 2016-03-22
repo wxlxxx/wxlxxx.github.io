@@ -75,6 +75,9 @@
 .dropdown-menu{
 	background-color: rgba(0,0,0,0.4);
 }
+.dropdown-menu li a:hover{
+	background-color: #337ab7;
+}
 .navbar-toggle span{
 	border: 1px solid #FFF;
 	background-color: #FFF;
