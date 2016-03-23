@@ -1,0 +1,13 @@
+body{
+	background-color: #d9e0e7;
+}
+.row{
+	margin: 100px 0;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+.col-md-4{
+	padding: 50px 15px;
+}

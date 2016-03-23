@@ -1,5 +1,4 @@
 $(document).ready(function(){
-	$('.inner').height($(window).height());
 	$("img").each(function(){
 		if ( $(this).offset().top+$(this).width()/2<$(window).height() ) {
 			$(this).attr("src",$(this).attr("s-src"));
