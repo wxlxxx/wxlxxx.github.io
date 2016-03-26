@@ -131,13 +131,13 @@ $(document).touchwipe({
         }
 	},
 	wipeUp:function(){
-		if( moveUp() ){
+		if( moveDown() ){
             setTimeout("generateOneNumber()",210);
             setTimeout("isgameover()",300);
         }
 	},
 	wipeDown:function(){
-		if( moveDown() ){
+		if( moveUp() ){
             setTimeout("generateOneNumber()",210);
             setTimeout("isgameover()",300);
         }

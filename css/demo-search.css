@@ -1,0 +1,17 @@
+.search-area{
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 200px;
+}
+#search-input{
+	width: 400px;
+}
+#search-result{
+	width: 400px;
+	text-align: left;
+	display: none;
+}
+.search-area button{
+	vertical-align: top;
+}
