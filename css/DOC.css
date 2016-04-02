@@ -19,3 +19,9 @@ body{
 	margin: 0;
 	border: none;
 }
+.container .doc-img{
+	text-align: center;
+}
+.container .doc-img img{
+	width: 80%;
+}
