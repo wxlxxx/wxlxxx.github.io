@@ -50,167 +50,213 @@
 	      <ul class="nav nav-pills nav-stacked">
 	      	<li><a href="javascript:;" id="menu-tap"><<收起</a></li>
 	        <li class="active"><a href="#a1">bootstrap-js插件案例</a></li>
-	        <li class="active"><a href="#a2">正则表达式</a></li>
+	        <li><a href="#a2">正则表达式</a></li>
+	        <li><a href="#a3">js数据类型</a></li>
+	        <li><a href="#a4">js数组</a></li>
 	      </ul>
 	    </nav>
 		
 		<div class="container" style="margin-top: 100px;">
 			<h1 id="a1">bootstrap-js插件案例</h1>
 			<h2>滚动监听</h2>
-		<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">   
-		   <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
-		      <ul class="nav navbar-nav">
-		         <li><a href="#one">第一部分</a></li>
-		         <li><a href="#two">第二部分</a></li>
-		         <li><a href="#three">第三部分</a></li>
-		         <li><a href="#four">第四部分</a></li>
-		         
-		      </ul>
-		   </div>
-		</nav>
-		<div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
-		   style="height:200px;overflow:auto; position: relative;">
-		   <h4 id="one">第一部分</h4>
-		   <p>滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。</br>
-		   	其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
-		如果您想要单独引用该插件的功能，那么您需要引用 scrollspy.js。或者，正如 Bootstrap 插件概览 一章中所提到，</br>
-		您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
-		   </p>
-		   <h4 id="two">第二部分</h4>
-		   <p>通过 data 属性：向您想要监听的元素（通常是 body）添加 data-spy="scroll"。然后添加带有 Bootstrap .nav 组件的父元素的 ID </br>
-		   	或 class 的属性 data-target。为了它能正常工作，您必须确保页面主体中有匹配您所要监听链接的 ID 的元素存在。
-		   </p>
-		   <h4 id="three">第三部分</h4>
-		   <p>滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。</br>
-		   	其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
-		如果您想要单独引用该插件的功能，那么您需要引用 scrollspy.js。或者，正如 Bootstrap 插件概览 一章中所提到，</br>
-		您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
-		   </p>
-		   <h4 id="four">第四部分</h4>
-		   <p>通过 data 属性：向您想要监听的元素（通常是 body）添加 data-spy="scroll"。然后添加带有 Bootstrap .nav 组件的父元素的 ID </br>
-		   	或 class 的属性 data-target。为了它能正常工作，您必须确保页面主体中有匹配您所要监听链接的 ID 的元素存在。
-		   </p>
-		</div>
+			<nav id="navbar-example" class="navbar navbar-default navbar-static" role="navigation">   
+			   <div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+			      <ul class="nav navbar-nav">
+			         <li><a href="#one">第一部分</a></li>
+			         <li><a href="#two">第二部分</a></li>
+			         <li><a href="#three">第三部分</a></li>
+			         <li><a href="#four">第四部分</a></li>
+			         
+			      </ul>
+			   </div>
+			</nav>
+			<div data-spy="scroll" data-target="#navbar-example" data-offset="0" 
+			   style="height:200px;overflow:auto; position: relative;">
+			   <h4 id="one">第一部分</h4>
+			   <p>滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。</br>
+			   	其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
+			如果您想要单独引用该插件的功能，那么您需要引用 scrollspy.js。或者，正如 Bootstrap 插件概览 一章中所提到，</br>
+			您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+			   </p>
+			   <h4 id="two">第二部分</h4>
+			   <p>通过 data 属性：向您想要监听的元素（通常是 body）添加 data-spy="scroll"。然后添加带有 Bootstrap .nav 组件的父元素的 ID </br>
+			   	或 class 的属性 data-target。为了它能正常工作，您必须确保页面主体中有匹配您所要监听链接的 ID 的元素存在。
+			   </p>
+			   <h4 id="three">第三部分</h4>
+			   <p>滚动监听（Scrollspy）插件，即自动更新导航插件，会根据滚动条的位置自动更新对应的导航目标。</br>
+			   	其基本的实现是随着您的滚动，基于滚动条的位置向导航栏添加 .active class。
+			如果您想要单独引用该插件的功能，那么您需要引用 scrollspy.js。或者，正如 Bootstrap 插件概览 一章中所提到，</br>
+			您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。
+			   </p>
+			   <h4 id="four">第四部分</h4>
+			   <p>通过 data 属性：向您想要监听的元素（通常是 body）添加 data-spy="scroll"。然后添加带有 Bootstrap .nav 组件的父元素的 ID </br>
+			   	或 class 的属性 data-target。为了它能正常工作，您必须确保页面主体中有匹配您所要监听链接的 ID 的元素存在。
+			   </p>
+			</div>
 		
-		<h2>折叠</h2>
-		<div class="panel-group" id="accordion">
-		  <div class="panel panel-default">
-		    <div class="panel-heading">
-		      <h4 class="panel-title">
-		        <a data-toggle="collapse" data-parent="#accordion" 
-		          href="#collapseOne">
-		          点击我进行展开，再次点击我进行折叠。第 1 部分
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapseOne" class="panel-collapse collapse in">
-		      <div class="panel-body">
-		        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。</br>
-		        同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。</br>
-		        或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。</br>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="panel panel-default">
-		    <div class="panel-heading">
-		      <h4 class="panel-title">
-		        <a data-toggle="collapse" data-parent="#accordion" 
-		          href="#collapseTwo">
-		          点击我进行展开，再次点击我进行折叠。第 2 部分
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapseTwo" class="panel-collapse collapse">
-		      <div class="panel-body">
-		        1.data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。</br>
-				2.href 或 data-target 属性添加到父组件，它的值是子组件的 id。</br>
-				3.data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。</br>
-		      </div>
-		    </div>
-		  </div>
-		  <div class="panel panel-default">
-		    <div class="panel-heading">
-		      <h4 class="panel-title">
-		        <a data-toggle="collapse" data-parent="#accordion" 
-		          href="#collapseThree">
-		          点击我进行展开，再次点击我进行折叠。第 3 部分
-		        </a>
-		      </h4>
-		    </div>
-		    <div id="collapseThree" class="panel-collapse collapse">
-		      <div class="panel-body">
-		        1.data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。</br>
-				2.href 或 data-target 属性添加到父组件，它的值是子组件的 id。</br>
-				3.data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。</br>
-		      </div>
-		    </div>
-		  </div>
-		</div>
+			<h2>折叠</h2>
+			<div class="panel-group" id="accordion">
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseOne">
+			          点击我进行展开，再次点击我进行折叠。第 1 部分
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseOne" class="panel-collapse collapse in">
+			      <div class="panel-body">
+			        如果您想要单独引用该插件的功能，那么您需要引用 collapse.js。</br>
+			        同时，也需要在您的 Bootstrap 版本中引用 Transition（过渡）插件。</br>
+			        或者，正如 Bootstrap 插件概览 一章中所提到，您可以引用 bootstrap.js 或压缩版的 bootstrap.min.js。</br>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseTwo">
+			          点击我进行展开，再次点击我进行折叠。第 2 部分
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseTwo" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        1.data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。</br>
+					2.href 或 data-target 属性添加到父组件，它的值是子组件的 id。</br>
+					3.data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。</br>
+			      </div>
+			    </div>
+			  </div>
+			  <div class="panel panel-default">
+			    <div class="panel-heading">
+			      <h4 class="panel-title">
+			        <a data-toggle="collapse" data-parent="#accordion" 
+			          href="#collapseThree">
+			          点击我进行展开，再次点击我进行折叠。第 3 部分
+			        </a>
+			      </h4>
+			    </div>
+			    <div id="collapseThree" class="panel-collapse collapse">
+			      <div class="panel-body">
+			        1.data-toggle="collapse" 添加到您想要展开或折叠的组件的链接上。</br>
+					2.href 或 data-target 属性添加到父组件，它的值是子组件的 id。</br>
+					3.data-parent 属性把折叠面板（accordion）的 id 添加到要展开或折叠的组件的链接上。</br>
+			      </div>
+			    </div>
+			  </div>
+			</div>
 	
-		<h2>提示工具</h2>
-		<p>通过 data 属性：如需添加一个提示工具（tooltip），只需向一个锚标签添加 data-toggle="tooltip" 即可。</br>
-		锚的 title 即为提示工具（tooltip）的文本。默认情况下，插件把提示工具（tooltip）设置在顶部。</p>
-		<p>提示工具（Tooltip）插件不像之前所讨论的下拉菜单及其他插件那样，它不是纯 CSS 插件。</br>
-		如需使用该插件，您必须使用 jquery 激活它（读取 javascript）</br>
-		$(function () { $("[data-toggle='tooltip']").tooltip(); });
-		</p>
-		<h4>工具提示（Tooltip）插件 - 锚</h4>
-		这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" 
-		   title="默认的 Tooltip">
-		   默认的 Tooltip
-		</a>.
-		这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" 
-		   data-placement="left" title="左侧的 Tooltip">
-		   左侧的 Tooltip
-		</a>.
-		这是一个 <a href="#" data-toggle="tooltip" data-placement="top" 
-		   title="顶部的 Tooltip">
-		   顶部的 Tooltip
-		</a>.
-		这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom" 
-		   title="底部的 Tooltip">
-		   底部的 Tooltip
-		</a>.
-		这是一个 <a href="#" data-toggle="tooltip" data-placement="right" 
-		   title="右侧的 Tooltip">
-		   右侧的 Tooltip
-		</a>		
-		<br>		
-		<h4>工具提示（Tooltip）插件 - 按钮</h4>
-		<button type="button" class="btn btn-default" data-toggle="tooltip" 
-		   title="默认的 Tooltip">
-		   默认的 Tooltip
-		</button>
-		<button type="button" class="btn btn-default" data-toggle="tooltip" 
-		   data-placement="left" title="左侧的 Tooltip">
-		   左侧的 Tooltip
-		</button>
-		<button type="button" class="btn btn-default" data-toggle="tooltip" 
-		   data-placement="top" title="顶部的 Tooltip">
-		   顶部的 Tooltip
-		</button>
-		<button type="button" class="btn btn-default" data-toggle="tooltip" 
-		   data-placement="bottom" title="底部的 Tooltip">
-		   底部的 Tooltip
-		</button>
-		<button type="button" class="btn btn-default" data-toggle="tooltip" 
-		   data-placement="right" title="右侧的 Tooltip">
-		   右侧的 Tooltip
-		</button>
-		
-		<h1 id="a2">正则表达式</h1>
-		<p>1.对象实例化var re = new RegExp("a","i")</p>
-		<p>2.var re = /a/i 直接量</p>
-		<div class="doc-img">
-			<img src="images/re-1.jpg"/>
-			<img src="images/re-2.jpg"/>
-			<img src="images/re-3.jpg"/>
-			<img src="images/re-4.jpg"/>
-			<img src="images/re-5.jpg"/>
-			<img src="images/re-6.jpg"/>
-			<img src="images/re-7.jpg"/>
-		</div>
-		
+			<h2>提示工具</h2>
+			<p>通过 data 属性：如需添加一个提示工具（tooltip），只需向一个锚标签添加 data-toggle="tooltip" 即可。</br>
+			锚的 title 即为提示工具（tooltip）的文本。默认情况下，插件把提示工具（tooltip）设置在顶部。</p>
+			<p>提示工具（Tooltip）插件不像之前所讨论的下拉菜单及其他插件那样，它不是纯 CSS 插件。</br>
+			如需使用该插件，您必须使用 jquery 激活它（读取 javascript）</br>
+			$(function () { $("[data-toggle='tooltip']").tooltip(); });
+			</p>
+			<h4>工具提示（Tooltip）插件 - 锚</h4>
+			这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" 
+			   title="默认的 Tooltip">
+			   默认的 Tooltip
+			</a>.
+			这是一个 <a href="#" class="tooltip-test" data-toggle="tooltip" 
+			   data-placement="left" title="左侧的 Tooltip">
+			   左侧的 Tooltip
+			</a>.
+			这是一个 <a href="#" data-toggle="tooltip" data-placement="top" 
+			   title="顶部的 Tooltip">
+			   顶部的 Tooltip
+			</a>.
+			这是一个 <a href="#" data-toggle="tooltip" data-placement="bottom" 
+			   title="底部的 Tooltip">
+			   底部的 Tooltip
+			</a>.
+			这是一个 <a href="#" data-toggle="tooltip" data-placement="right" 
+			   title="右侧的 Tooltip">
+			   右侧的 Tooltip
+			</a>		
+			<br>		
+			<h4>工具提示（Tooltip）插件 - 按钮</h4>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" 
+			   title="默认的 Tooltip">
+			   默认的 Tooltip
+			</button>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" 
+			   data-placement="left" title="左侧的 Tooltip">
+			   左侧的 Tooltip
+			</button>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" 
+			   data-placement="top" title="顶部的 Tooltip">
+			   顶部的 Tooltip
+			</button>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" 
+			   data-placement="bottom" title="底部的 Tooltip">
+			   底部的 Tooltip
+			</button>
+			<button type="button" class="btn btn-default" data-toggle="tooltip" 
+			   data-placement="right" title="右侧的 Tooltip">
+			   右侧的 Tooltip
+			</button>
+		<!--**************************************************-->
+			<h1 id="a2">正则表达式</h1>
+			<p>1.对象实例化var re = new RegExp("a","i")</p>
+			<p>2.var re = /a/i 直接量</p>
+			<div class="doc-img">
+				<img src="images/re-1.jpg"/>
+				<img src="images/re-2.jpg"/>
+				<img src="images/re-3.jpg"/>
+				<img src="images/re-4.jpg"/>
+				<img src="images/re-5.jpg"/>
+				<img src="images/re-6.jpg"/>
+				<img src="images/re-7.jpg"/>
+			</div>
+		<!--*********************************************-->
+			<h1 id="a3">js数据类型</h1>
+			<h4>1.5种基本数据类型和对象</h4>
+			<div class="doc-img">
+				<img src="images/jsbase-3.jpg" alt="" />
+			</div>
+			<h4>2.数据类型隐式转换</h4>
+			<div class="doc-img">
+				<img src="images/jsbase-2.jpg" alt="" />
+				<img src="images/jsbase-1.jpg" alt="" />
+			</div>
+			<h4>3.包装对象</h4>
+			<p>3.就是当基本类型以对象的方式去使用时，JavaScript会转换成对应的包装类型，相当于new一个对象，
+				内容和基本类型的内容一样，然后当操作完成再去访问的时候，这个临时对象会被销毁，然后再访问时候就是undefined
+			</p>
+			<h4>4.类型检测</h4>
+			<p>.typeof适用于检测基本类型和函数function，如typeof "123"返回“string”</p>
+			<p>instanceof适用于检测原生对象,var one=new Student();one instanceof Student//one的原型指向Student返回true</p>
+			<p>Object.prototype.toString().apply([1,2,3])返回"[object Array]"适用于内置对象</p>
+			<div class="doc-img">
+				<img src="images/jsbase-4.jpg" alt="" />
+			</div>
+		<!--******************************************-->
+			<h1 id="a4">js 数组</h1>
+			<h4>常用方法</h4>
+			<p>arr.push(?);在数组尾部添加</p>
+			<p>arr.unshift(?);在数组头部添加</p>
+			<p>delete arr[i]不改变数组长度只是将某个索引对应的元素变成underfined</p>
+			<p>arr.lenth-=1;和arr.pop();从尾部移除一个元素</p>
+			<p>arr.shift();从头部移除一个元素</p>
+			<p>arr.reverse();将数组逆序</p>
+			<div class="doc-img">
+				<img src="images/jsbase-5.jpg" alt="" />
+				<img src="images/jsbase-6.jpg" alt="" />
+				<img src="images/jsbase-7.jpg" alt="" />
+				<img src="images/jsbase-8.jpg" alt="" />
+				<img src="images/jsbase-9.jpg" alt="" />
+				<img src="images/jsbase-10.jpg" alt="" />
+				<img src="images/jsbase-11.jpg" alt="" />
+				<img src="images/jsbase-12.jpg" alt="" />
+				<img src="images/jsbase-13.jpg" alt="" />
+				<img src="images/jsbase-14.jpg" alt="" />
+				<img src="images/jsbase-15.jpg" alt="" />
+				<img src="images/jsbase-16.jpg" alt="" />
+			</div>
 		</div>
 		
 		<nav id="foot" class="navbar navbar-inverse navbar-static-bottom">
