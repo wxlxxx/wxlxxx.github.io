@@ -53,6 +53,7 @@
 	        <li><a href="#a2">正则表达式</a></li>
 	        <li><a href="#a3">js数据类型</a></li>
 	        <li><a href="#a4">js数组</a></li>
+	        <li><a href="#a5">js闭包与封装</a></li>
 	      </ul>
 	    </nav>
 		
@@ -257,6 +258,28 @@
 				<img src="images/jsbase-15.jpg" alt="" />
 				<img src="images/jsbase-16.jpg" alt="" />
 			</div>
+		<!--**************************************************-->
+			<h1 id="a5">js闭包与封装</h1>
+			<p>
+				1.对于一般的函数，函数被调用后函数里的局部变量就可以被释放掉了<br />
+				2.js闭包,即能够读取其他函数内部变量的函数。可以把闭包简单理解成“定义在一个函数内部的函数”。
+				在本质上，闭包就是将函数内部和函数外部连接起来的一座桥梁。<br />
+				3.闭包的最大用处有两个，一个是可以读取函数内部的变量，另一个就是让这些变量始终保持在内存中。
+				闭包的另一个用处，是封装对象的私有属性和私有方法。
+			</p>
+			<div class="doc-img">
+				<img src="images/bibao-1.jpg"/>
+				<img src="images/bibao-2.jpg"/>
+				<img src="images/bibao-3.jpg"/>
+				<img src="images/bibao-4.jpg"/>
+				<img src="images/bibao-5.jpg"/>
+			</div>
+			<h4>4.立即执行函数</h4>
+			<code>~function(){console.info(1)}()</code>
+			<code>!function(){console.info(2)}()</code>
+			<code>(function(){console.info(3)})()</code>
+			<h4>作用于</h4>
+			<p>js有三种组用于：全局 函数 eval; 并且js没有块级作用域</p>
 		</div>
 		
 		<nav id="foot" class="navbar navbar-inverse navbar-static-bottom">
