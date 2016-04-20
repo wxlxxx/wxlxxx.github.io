@@ -13,7 +13,7 @@ a{
 	padding:0 0.35rem;
 }
 #header .icon-1{
-	width: 0.15rem;
+	width: 0.18rem;
 	padding-top: 0.3rem;
 }
 #header .icon-2{
@@ -36,13 +36,16 @@ a{
 	margin: 0;
 	min-height: 0;
 }
-#carousel-example-generic{
-	margin-top: 0.88rem;
+.carousel-indicators{
+	margin-bottom: 0;
+	bottom: 0.1rem;
 }
 .carousel-indicators li{
 	width: 5px;
 	height: 5px;
 	border-radius: 5px;
+	background-color: rgba(0,0,0,0.05);
+	border-color: rgba(0,0,0,0.1);
 }
 .carousel-indicators .active{
 	width: 7px;
