@@ -1,0 +1,97 @@
+html{
+	-webkit-text-size-adjust: none; 
+}
+body{
+	background-color: #F3F4F6;
+}
+a{
+	color: inherit !important;
+}
+#header{
+	height: 0.88rem;
+	text-align: center;
+	padding:0 0.35rem;
+}
+#header .icon-1{
+	width: 0.15rem;
+	padding-top: 0.3rem;
+}
+#header .icon-2{
+	width: 0.42rem; 
+	padding-top: 0.22rem;
+}
+#header .icon-l{
+	width: 0.35rem;
+	padding-top: 0.24rem;
+}
+#header .icon-m{
+	width: 0.44rem; 
+	padding-top: 0.22rem;
+}
+#header .icon-r{
+	width: 0.42rem; 
+	padding-top: 0.22rem;
+}
+#mynavbar{
+	margin: 0;
+	min-height: 0;
+}
+#carousel-example-generic{
+	margin-top: 0.88rem;
+}
+.carousel-indicators li{
+	width: 5px;
+	height: 5px;
+	border-radius: 5px;
+}
+.carousel-indicators .active{
+	width: 7px;
+	height: 7px;
+}
+/*.............................*/
+
+
+
+
+
+
+
+
+
+
+/*.........................................*/
+#footer .row{
+	margin: 0 auto;
+	padding: 0.52rem 0;
+}
+#footer .row .col-xs-4{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+#footer .row .col-xs-4 p{
+	font-size: 0.24rem;
+	color: #FFFFFF;
+	padding: 0;
+	margin: 0;
+}
+#footer .row .col-xs-4 img{
+	width: 0.64rem;
+	padding-bottom: 0.1rem;
+}
+#footer hr{
+	margin: 0;
+	padding: 0;
+	border-top: 1px solid RGBA(255, 255, 255, 0.02);
+}
+#footer .footer-bottom{
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 0.28rem;
+	padding: 0.32rem 0;
+}
+
+
+
+
+
