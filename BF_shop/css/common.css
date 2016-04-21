@@ -5,10 +5,30 @@ body{
 a{
 	color: inherit !important;
 }
+.topto{
+	position: fixed;
+	right: 0.25rem;
+	bottom: 0.5rem;
+	z-index: 99;
+}
+.topto img{
+	width: 0.6rem;
+}
 #header{
 	height: 0.88rem;
 	text-align: center;
 	padding:0 0.35rem;
+}
+#header .icon-one{
+	color: #FFFFFF;
+	padding-top: 0.3rem;
+	font-size: 0.32rem;
+}
+#header .icon-two{
+	font-size: 0.32rem;
+	line-height: 0.45rem;
+	padding-top: 0.23rem;
+	color: #FFFFFF;
 }
 #header .icon-1{
 	width: 0.18rem;

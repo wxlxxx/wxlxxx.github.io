@@ -1,0 +1,164 @@
+.line{
+	width: 100%;
+	float: left;
+}
+#content-a{
+	background-color: #FFFFFF;
+	padding: 0.3rem 0.24rem;
+}
+#content-a span{
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+}
+#content-a .glyphicon{
+	float: right;
+	color: #969696;
+}
+
+#content-b{
+	background-color: #FFFFFF;
+	width: 10;
+	padding: 0.26rem 0.24rem;
+	margin: 0.16rem 0;
+}
+#content-b img{
+	width: 1.2rem;
+}
+#content-b span{
+	font-size: 0.24rem;
+	line-height: 0.33rem;
+}
+#content-b .pull-right{
+	text-align: right;
+	font-size: 0.24rem;
+	line-height: 0.24rem;
+}
+#content-b .pull-right p{
+	color: #969696;
+}
+#content-b .pull-right p:first-child{
+	color: #FF6B14;
+}
+#content-b .free{
+	margin-top: 0.16rem;
+	position: relative;
+	background-color: #F3F4F6;
+	padding: 0.12rem 0.16rem;
+}
+#content-b .free .t-right{
+	position: absolute;
+	color: #FF6B14;
+	line-height: 0.24rem;
+	right: 0.24rem;
+}
+
+
+
+
+/*................................*/
+#content-c{
+	margin-bottom: 0.16rem;
+}
+#content-c .list-group .list-group-item{
+	padding: 0.24rem;
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+	border-color: #E9EAED;
+}
+#content-c .list-group .list-group-item span{
+	float: right;
+	color: #969696;
+}
+#content-c .list-group .list-group-item .glyphicon{
+	line-height: 0.4rem;
+	padding-left: 0.2rem;
+}
+
+
+
+/*.................................*/
+#content-d{
+	background-color: #FFFFFF;
+	padding: 0.24rem 0.23rem;
+	margin-bottom: 0.16rem;
+}
+#content-d p{
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+	margin-bottom: 0.24rem;
+}
+#content-d button{
+	width: 2.6rem;
+	height: 0.78rem;
+	background-color: #FFFFFF;
+	border: solid 1px #A0A0A0;
+	margin-right: 0.37rem;
+	padding: 0;
+	font-size: 0.24rem;
+	line-height: 0.25rem;
+	color: #707070;
+}
+#content-d button.active{
+	border: solid 1px #468CE0;
+}
+#content-d button img{
+	width: 0.46rem;
+}
+
+
+/*....................................*/
+#content-e{
+	margin-bottom: 0.85rem;
+}
+#content-e .list-group .list-group-item{
+	padding: 0.24rem;
+	font-size: 0.28rem;
+	line-height: 0.4rem;
+	border-color: #E9EAED;
+}
+#content-e .list-group .list-group-item span{
+	float: right;
+	color: #FF6B14;
+}
+
+
+
+/*.......................................*/
+#content-f{
+	padding-left:0.25rem;
+	background-color: #FFFFFF;
+	height: 0.88rem;
+}
+#content-f button{
+	float: right;
+	font-size: 0.32rem;
+	line-height: 0.45rem;
+	padding: 0.2rem 0.56rem;
+	color: #FFFFFF;
+	background-color: #468CE0;
+}
+#content-f span{
+	font-size: 0.32rem;
+	line-height: 0.88rem;
+	color: #FF6B14;
+}
+#content-f span:first-child{
+	color: #343434;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

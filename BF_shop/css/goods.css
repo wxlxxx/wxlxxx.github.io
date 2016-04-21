@@ -65,20 +65,27 @@
 	background-color: #FFFFFF;
 	margin-top: 0.24rem;
 }
+#content-3 .nav-tabs{
+	padding: 0.17rem 0;
+}
 #content-3 .nav-tabs li{
 	text-align: center;
 	width: 50%;
+}
+#content-3 .nav-tabs li:first-child{
+	border-right: solid 1px #DADCE2;
 }
 #content-3 .nav-tabs li a{
 	margin: 0;
 	font-size: 0.28rem;
 	line-height: 0.4rem;
 	color: #2B2B2B;
-	padding: 0.24rem 0;
+	padding: 0.07rem 0;
 }
 #content-3 .nav-tabs li.active a{
 	color: #608FF7 !important;
 	border: none;
+	text-decoration: underline;
 }
 #content-3 .nav-tabs li a:focus{
 	outline: none;

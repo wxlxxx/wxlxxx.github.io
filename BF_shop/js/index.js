@@ -16,6 +16,11 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 	});
+	
+	$('#content-d button').bind('click',function(){
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+	});
 	touchfunc();
 	scrollfunc();
 });
