@@ -34,17 +34,14 @@ $(document).ready(function(){
 	}
 
 	
-	$(window).scroll(function(){
-		
-		
+	$(window).scroll(function(){	
 		if ( $('#content-2').offset().top+20<$('#content-1').height()+$(window).scrollTop() ) {
 			$('#mynavbar').css('background-color','rgba(0,0,0,0.2)');
 		}else{
 			$('#mynavbar').css('background-color','rgba(0,0,0,0)');
 		}
-	
-		
 	});
+	alert('yes')
 
 });
 

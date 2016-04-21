@@ -1,5 +1,6 @@
 html{
 	-webkit-text-size-adjust: none; 
+	font-size: 100px;
 }
 body{
 	background-color: #F3F4F6;
