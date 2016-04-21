@@ -27,14 +27,14 @@ $(document).ready(function(){
 
 
 function scrollfunc(){
-	if ( $('#content-2').offset().top+20<$('#content-1').height()+$(window).scrollTop() ) {
-		$('#mynavbar').css('background-color','rgba(0,0,0,0.2)');
+	if ( $('#content-2').offset().top+100<$('#content-1').height()+$(window).scrollTop() ) {
+		$('#mynavbar').css('background-color','#FFFFFF');
 	}
 
 	
 	$(window).scroll(function(){	
-		if ( $('#content-2').offset().top+20<$('#content-1').height()+$(window).scrollTop() ) {
-			$('#mynavbar').css('background-color','rgba(0,0,0,0.2)');
+		if ( $('#content-2').offset().top+100<$('#content-1').height()+$(window).scrollTop() ) {
+			$('#mynavbar').css('background-color','#FFFFFF');
 		}else{
 			$('#mynavbar').css('background-color','rgba(0,0,0,0)');
 		}
