@@ -1,0 +1,256 @@
+html {
+    font-size : 20px;
+    font-family: ;
+}
+@media only screen and (min-width: 212px){
+    html {
+        font-size: 28px !important;
+    }
+}
+@media only screen and (min-width: 319px){
+    html {
+        font-size: 42px !important;
+    }
+}
+@media only screen and (min-width: 359px){
+    html {
+        font-size: 48px !important;
+    }
+}
+@media only screen and (min-width: 383px){
+    html {
+        font-size: 52px !important; 
+    }
+}
+@media only screen and (min-width: 399px){
+    html {
+        font-size: 54px !important; 
+    }
+}
+@media only screen and (min-width: 414px){
+    html {
+        font-size: 55px !important; 
+    }
+}
+@media only screen and (min-width: 423px){
+    html {
+        font-size: 56px !important; 
+    }
+}
+@media only screen and (min-width: 479px){
+    html {
+        font-size: 64px !important; 
+    }
+}
+@media only screen and (min-width: 539px){
+    html {
+        font-size: 72px !important; 
+    }
+}
+@media only screen and (min-width: 640px){
+    html {
+        font-size: 85px !important; 
+    }
+}
+@media only screen and (min-width: 749px){
+    html {
+        font-size: 100px !important; 
+    }
+}
+
+
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #000001;
+}
+a{
+	color: inherit !important;
+}
+a:hover{
+	color: inherit !important;
+	text-decoration: none;
+}
+a:focus{
+	color: inherit !important;
+	text-decoration: none;
+}
+#video-show{
+	position: absolute;
+	top: 7.54rem;
+	left: 50%;
+	margin-left: -3.5rem;
+	border: none;
+}
+#video-show iframe{
+	width: 7rem;
+	height: 190px;
+}
+.weibo{
+	display: none;
+	text-align: center;
+	bottom: 0;
+	position: fixed;
+	width: 100%;
+	height: 0.88rem;
+	background-color: #608FF7;
+	line-height: 0.88rem;
+}
+.weibo button{
+	border-radius: 0.35rem;
+	padding: 0;
+	width: 4rem;
+	height: 0.7rem;
+	border: solid 1px #FFFFFF;
+	font-size: 0.28rem;
+	line-height: 0.7rem;
+	color: #000000;
+}
+.weibo button img{
+	width: 0.43rem;
+	height: 0.35rem;
+	padding-right: 0.1rem;
+}
+
+#content-1{
+	width: 100%;
+	height: 6.8rem;
+}
+#content-1 button{
+	position: absolute;
+	border-radius: 0.35rem;
+	padding: 0;
+	width: 4rem;
+	height: 0.7rem;
+	border: solid 1px #FFFFFF;
+	font-size: 0.28rem;
+	line-height: 0.7rem;
+	color: #FFFFFF;
+	background-color: inherit;
+	top: 6.54rem;
+	left: 50%;
+	margin-left: -2rem;
+}
+#content-1 button img{
+	width: 0.43rem;
+	height: 0.35rem;
+	padding-right: 0.1rem;
+}
+
+#content-2{
+	width: 100%;
+	text-align: center;
+}
+#content-2 .img-1{
+	width: 7rem;
+	height: 2rem;
+}
+
+#content-2 .panel{
+	border: none;
+	width: 7rem;
+	margin: 0.4rem auto;
+}
+#content-2 .panel .panel-heading{
+	color: #FFFFFF;
+	font-size: 0.32rem;
+	line-height: 0.45rem;
+	text-align: left;
+	background: url(../img/bg-1.png);
+	background-position:center ;
+	background-size:100% 100% ;
+}
+#content-2 .panel .panel-body{
+	margin: 0;
+	padding: 0;
+}
+
+#content-2 .ad-img{
+	width: 6.6rem;
+	height: 3.2rem;
+	margin: 0 auto;
+	margin-top: 0.4rem;
+	background-color: grey;
+	overflow: hidden;
+}
+#content-2 .ad-img img{
+	width: 100%;
+	height: auto;
+}
+#content-2 .ad-text{
+	text-align: left;
+	margin: 0;
+	font-size: 0.28rem;
+	line-height: 0.33rem;
+	padding-left: 0.2rem;
+	color: #3D3D3D;
+	padding-top: 0.1rem;
+}
+
+.twocode img{
+	width: 2.4rem;
+}
+.twocode p{
+	font-size: 0.24rem;
+	line-height: 0.33rem;
+	color: #FFFFFF;
+	padding-top: 0.3rem;
+}
+
+#footer{
+	font-size: 0.24rem;
+	line-height: 0.33rem;
+	color: #FFFFFF;
+	padding: 0.6rem 0.8rem;
+}
+
+/*............................activity.......................*/
+
+.ac{
+	position: relative;
+}
+.ac img{
+	width: 100%;
+	vertical-align: top;
+}
+.ac a.btn-1 img{
+	position: absolute;
+	bottom: 0.5rem;
+	left: 50%;
+	margin-left: -1.5rem;
+	width: 3rem;
+}
+.ac a.btn-2 img{
+	position: absolute;
+	bottom: 0.5rem;
+	left: 50%;
+	margin-left: -2.5rem;
+	width: 5rem;
+}
+.ac a.btn-3 img{
+	position: absolute;
+	bottom: 1.5rem;
+	left: 0.4rem;
+	width: 3rem;
+}
+.ac a.btn-4 img{
+	position: absolute;
+	bottom: 1.5rem;
+	right: 0.4rem;
+	width: 3rem;
+}
+.btn-weibo{
+	position: absolute;
+	bottom: 1.6rem;
+	height: 0.8rem;
+	left: 1rem;
+	width: 6rem;
+}
+

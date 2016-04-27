@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/index.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/jquery.anystretch.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		
+		<div id="video-show">
+			<iframe frameborder="no" border="0" src="http://vod.baofengcloud.com/8188623/bfcloud.html?servicetype=1&uid=8188623&fid=FE241E863720805CF1E05EA63E1B7797&width=933&height=524&auto=1
+" width="933px" height="524px"></iframe>
+		</div>
+		<div id="banner">
+			<div class="container">
+				<a href=""><img src="img/logo.svg"/></a>
+				<a class="weixin" href="">
+					<img class="shared" src="img/bg-6.svg"/>
+					<span class="shared">关注公众号</span>
+				</a>
+				<a class="weibo" href="">
+					<img src="img/bg-7.svg"/>
+					<span class="shared">分享微博赢会员</span>
+				</a>
+				<a href=""><span class="pull-right">返回官网</span></a>
+			</div>
+			<img class="weixincode" src="img/ad-3.png"/>
+		</div>
+		
+		<div id="content-one" data-stretch="img/bg-1.jpg">
+		</div>
+		
+		<div id="content-two">
+			<div style="height: 394px;"></div>
+			<div class="ad-1">
+				<a href="activity.html"><img src="img/fb-7.jpg"/></a>
+			</div>
+			
+			<div class="ad-2">
+				<div class="row">
+					<div class="col-md-8" style="text-align: center;">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						  	 热点新闻
+						  </div>
+						  <div class="panel-body" style="padding-bottom: 16px;">
+						  	<div class="ad-img">
+						  		<a href="http://www.geekpark.net/topics/213646"><img src="img/fb-1.jpg"/></a>
+						  	</div>
+					    	<p class="ad-text">暴风 TV：一群牛人让人们从小屏回归大屏的野心</p>
+						  	<div class="ad-img">
+						  		<a href="http://it.gmw.cn/2015-11/06/content_17640113.htm"><img src="img/fb-2.jpg"/></a>
+						  	</div>
+					    	<p class="ad-text">暴风TV刘耀平开信：回归初心不负奋斗的青春</p>
+						  	<div class="ad-img">
+						  		<a href="http://tech.gmw.cn/jd/2015-12/24/content_18223403.htm"><img src="img/fb-3.jpg"/></a>
+						  	</div>
+					    	<p class="ad-text">2015平板电视大会召开 暴风TV获“技术成就奖”</p>
+					    	<div class="ad-img">
+					    		<a href="http://help.3g.163.com/16/0329/22/BJC1P2ES00964KMD.html"><img src="img/fb-4.jpg"/></a>
+					    	</div>
+					    	<p class="ad-text">暴风TV，DT生态战略下的超体进化论</p>
+					    	<div class="ad-img">
+					    		<a href="http://it.msn.com.cn/750507/834085168114b.shtml"><img src="img/fb-5.jpg"/></a>
+					    	</div>
+					    	<p class="ad-text">暴风TV息卷中国信息展 斩获行业大奖</p>
+					    	
+						  </div>
+						 
+						</div>
+						 <a href="#content-one"><img src="img/acp-btn-four.png"/></a>
+					</div>
+					<div class="col-md-4">
+						<div class="panel panel-default">
+						  <div class="panel-heading">
+						   	微博直播互动区
+						  </div>
+						  <div class="panel-body">
+						    <iframe width="100%" height="950" class="share_self"  frameborder="0" scrolling="no" src="http://widget.weibo.com/weiboshow/index.php?language=&width=0&height=1750&fansRow=1&ptype=1&speed=0&skin=1&isTitle=1&noborder=1&isWeibo=1&isFans=1&uid=5648516491&verifier=1d699ca8&dpc=1"></iframe>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="footer">
+				<p>© 2005 - 2016 深圳暴风统帅科技有限公司 版权所有 备案号：粤ICP备15093380号-1</p>
+			</div>
+		</div>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('#content-one').anystretch();
+				$('.weibo').hover(function(){
+					$('.weibo img').attr('src','img/bg-5.svg')
+				},function(){$('.weibo img').attr('src','img/bg-7.svg')});
+				
+				$('.weixin').hover(function(){
+					$('.weixin img').attr('src','img/bg-4.svg'),
+					$('.weixincode').css('display','block')
+				},function(){$('.weixin img').attr('src','img/bg-6.svg'),
+					$('.weixincode').css('display','none')
+				});
+			});
+		</script>
+	</body>
+</html>

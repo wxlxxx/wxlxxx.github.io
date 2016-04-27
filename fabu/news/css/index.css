@@ -1,0 +1,254 @@
+a{
+	color: inherit !important;
+}
+a:hover{
+	color: inherit !important;
+	text-decoration: none;
+}
+a:focus{
+	color: inherit !important;
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+#video-show{
+	position: absolute;
+	top: 455px;
+	left: 50%;
+	margin-left: -466px;
+	border: none;
+}
+
+
+
+#banner{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background-color: rgba(0,0,0,0.4);
+	z-index: 99;
+}
+#banner .container span{
+	font-size: 16px;
+	color: #FFFFFF;
+}
+#banner .container img{
+	width: 30px;
+}
+#banner img.shared{
+	margin-left: 412px;
+}
+#banner span.shared{
+	margin-right: 55px;
+	margin-left: 8px;
+}
+#banner .weixincode{
+	z-index: 999;
+	position: absolute;
+	top: 63px;
+	left: 510px;
+	display: none;
+}
+
+
+
+#content-one{
+	height: 637px;
+}
+
+
+#content-two{
+	background-color: #000001;
+}
+#content-two .ad-1{
+	width: 1220px;
+	height: 260px;
+	margin: 0 auto;
+}
+#content-two .ad-2{
+	margin: 0 auto;
+	width: 1220px;
+	margin-top: 50px;
+}
+#content-two .ad-2 .panel{
+	border: none;
+	border-radius: inherit;
+}
+#content-two .ad-2 .panel .panel-heading{
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 33px;
+	background: url(../img/bg-2.svg);
+	background-size: 100% 100%;
+	border-radius: inherit;
+}
+#content-two .ad-2 .panel .panel-body{
+	padding: 0;
+}
+#content-two .ad-2 .ad-img{
+	width: 670px;
+	height: 320px;
+	margin: 0 auto;
+	margin-top: 20px;
+	background-color: grey;
+	overflow: hidden;
+}
+#content-two .ad-2 .ad-img img{
+	width: 100%;
+	height: auto;
+}
+#content-two .ad-2 .ad-text{
+	font-size: 20px;
+	line-height: 29px;
+	padding-left: 70px;
+	text-align: left;
+	padding-top: 8px;
+}
+
+#content-two .ad-2 .hudong{
+	height: 863px;
+}
+
+.footer{
+	font-size: 18px;
+	line-height: 25px;
+	text-align: center;
+	padding: 72px;
+}
+
+
+
+/*...................activity........................*/
+.ac-body{
+	background-color: deepskyblue;
+}
+.ac-banner{
+	height: 830px;
+}
+.ac-container{
+	width: 1000px;
+	margin: 0 auto;
+}
+.ac-container .acp-2{
+	margin: 50px 0;
+	position: relative;
+}
+.ac-container .acp-2 img{
+	width: 100%;
+}
+.ac-container .acp-3{
+	position: relative;
+}
+.ac-container .acp-3 img{
+	width: 100%;
+}
+.ac-container .acp-2 .btn-one img{
+	position: absolute;
+	width: 150px;
+	top: 490px;
+	left: 160px;
+}
+.ac-container .acp-2 .btn-two img{
+	position: absolute;
+	width: 150px;
+	top: 1000px;
+	left: 690px;
+}
+.ac-container .acp-3 .btn-three img{
+	position: absolute;
+	width: 150px;
+	top: 520px;
+	left: 690px;
+}
+.ac-container .acp-3 .btn-four img{
+	position: absolute;
+	width: 150px;
+	top: 980px;
+	left: 160px;
+}
+.ac-container .acp-3 .btn-five img{
+	position: absolute;
+	width: 150px;
+	top: 1490px;
+	left: 690px;
+}
+.ac-container .acp-4{
+	margin-bottom: 100px;
+}
+.ac-container .acp-4 img{
+	margin-left: 150px;
+	margin-top: 50px;
+}
+.ac-container .acp-4 a:nth-child(3){
+	padding-left: 150px;
+}
+.fake{
+	position: absolute;
+	width: 180px;
+	height: 20px;
+}
+.weixin-one{
+	top: 430px;
+	left: 245px;
+}
+.weibo-one{
+	top: 430px;
+	left: 60px;
+}
+.weixin-two{
+	top: 945px;
+	left: 780px;
+}
+.weibo-two{
+	top: 945px;
+	left: 580px;
+}
+.weixin-three{
+	top: 465px;
+	left: 780px;
+}
+.weibo-three{
+	top: 465px;
+	left: 580px;
+}
+.weixin-four{
+	top: 920px;
+	left: 240px;
+}
+.weibo-four{
+	top: 920px;
+	left: 40px;
+}
+.weixin-five{
+	top: 1430px;
+	left: 780px;
+}
+.weibo-five{
+	top: 1430px;
+	left: 585px;
+}
+
+
+
+.weixin-code{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px !important;
+	height: 200px;
+	z-index: 99;
+}
+.weixin-code2{
+	display: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 200px !important;
+	height: 200px;
+	z-index: 99;
+}

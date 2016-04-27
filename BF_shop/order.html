@@ -6,7 +6,6 @@
 		<title>确认订单</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/order.css"/>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.touchwipe.js" type="text/javascript" charset="utf-8"></script>
@@ -15,17 +14,36 @@
 	<body>
 		<nav id="mynavbar" class="navbar navbar-inverse navbar-static-top">
 		  <div id="header" class="container-fluid">
-		    <span class="pull-left icon-one glyphicon glyphicon-menu-left"></span>
+		    <a href=""><span class="pull-left icon-one glyphicon glyphicon-menu-left"></span></a>
 		    <p class="icon-two">确认下单</p>
 		  </div>
 		</nav>
 		
+		<!--没地址的-->
 		<div id="content-a">
 			<a href="">
-				<span>添加新地址</span>
-				<span class="glyphicon glyphicon-menu-right"></span>
+				<div>
+					<span>添加新地址</span>
+					<span class="pull-right glyphicon glyphicon-menu-right"></span>
+				</div>
 			</a>
 		</div>
+		<!--有地址的-->
+		<div id="content-a">
+			<a href="">
+				<div class="name-tel">
+					<span>袁青</span>
+					<span>15527888455</span>
+					<span class="diyidian pull-right glyphicon glyphicon-menu-right"></span>
+				</div>
+				<div>
+					<span class="glyphicon glyphicon-map-marker"></span>
+					<span>广东省深圳市南山区三诺智慧大厦</span>
+				</div>
+			</a>
+		</div>
+		
+		
 		<img class="line" src="img/order-4.png"/>
 		
 		<div id="content-b">
@@ -37,6 +55,24 @@
 					<p>x1</p>
 				</div>
 			</div>
+			<div class="free">
+				<div class="dropdown">
+				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  	<span>赠品</span>
+				  	<img src="img/order-5.png"/>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				    <li>
+				    	<span>[会员服务] 赠送一个月的会员</span>
+						<span class="t-right">￥0</span>
+				    </li>
+				    <li>
+				    	<span>[会员服务] 赠送一个月的会员</span>
+						<span class="t-right">￥0</span>
+				    </li>
+				  </ul>
+				</div>
+			</div>
 			<div>
 				<img src="img/order-1.png"/>
 				<span>暴风超体电视F1 50吋 4K</span>
@@ -46,12 +82,22 @@
 				</div>
 			</div>
 			<div class="free">
-				<span>[会员服务] 赠送一个月的会员</span>
-				<span class="t-right">￥0</span>
-			</div>
-			<div class="free">
-				<span>[会员服务] 赠送一个月的会员</span>
-				<span class="t-right">￥0</span>
+				<div class="dropdown">
+				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  	<span>赠品</span>
+				  	<img src="img/order-5.png"/>
+				  </button>
+				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				    <li>
+				    	<span>[会员服务] 赠送一个月的会员</span>
+						<span class="t-right">￥0</span>
+				    </li>
+				    <li>
+				    	<span>[会员服务] 赠送一个月的会员</span>
+						<span class="t-right">￥0</span>
+				    </li>
+				  </ul>
+				</div>
 			</div>
 		</div>
 		
@@ -65,14 +111,21 @@
 		
 		<div id="content-d">
 			<p>支付方式</p>
-			<button class="active">
-				<img src="img/order-2.png"/>
-				<span>支付宝支付</span>
-			</button>
-			<button>
-				<img src="img/order-3.png"/>
-				<span>微信支付</span>
-			</button>
+			<div class="btn-group" data-toggle="buttons">
+			  <label class="btn active">
+			    <input type="radio" name="options" id="option1" checked>
+			    	<img src="img/order-2.png"/>
+					<span>支付宝支付</span>
+				</input>
+			  </label>
+			  <label class="btn">
+			    <input type="radio" name="options" id="option2">
+					<img src="img/order-3.png"/>
+					<span>微信支付</span>
+				</input>
+			  </label>
+			</div>
+			
 		</div>
 		
 		<div id="content-e">

@@ -6,7 +6,6 @@
 		<title>商品详细页</title>
 		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
-		<link rel="stylesheet" type="text/css" href="css/goods.css"/>
 		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
 		<script src="js/jquery.touchwipe.js" type="text/javascript" charset="utf-8"></script>
@@ -16,7 +15,10 @@
 		<nav id="mynavbar" class="navbar navbar-fixed-top">
 		  <div id="header" class="container-fluid">
 		    <img class="pull-left icon-1" src="img/goods-11.png"/>
-		    <img class="pull-right icon-2" src="img/goods-22.png"/>
+		    <div class="shopcar-icon pull-right">
+		    	<img class="icon-2" src="img/goods-22.png"/>
+		    	<div class="shopcar-num">1</div>
+		    </div>
 		  </div>
 		</nav>
 		
@@ -85,27 +87,9 @@
 		<a href="order.html"><button id="buy">立即购买</button></a>
 		
 		
-		<!--<nav id="mynavbar" class="navbar navbar-inverse">
-		  <div id="footer">
-		    <div class="row">
-				<div class="col-xs-4">
-					<img src="img/home-5.svg"/>
-					<p>全场免邮</p>
-				</div>
-				<div class="col-xs-4">
-					<img src="img/home-6.svg"/>
-					<p>送装同步</p>
-				</div>
-				<div class="col-xs-4">
-					<img src="img/home-7.svg"/>
-					<p>换货承诺</p>
-				</div>
-			</div>
-			<hr />
-			<div class="footer-bottom">
-				<span>登录</span> ｜<span> 注册</span> ｜<span> 找回密码</span> ｜<span> 在线客服</span>
-			</div>
-		  </div>
-		</nav>-->
+		
+		<script type="text/javascript">
+			scrollfunc();
+		</script>
 	</body>
 </html>

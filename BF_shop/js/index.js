@@ -21,8 +21,27 @@ $(document).ready(function(){
 		$(this).addClass('active');
 		$(this).siblings().removeClass('active');
 	});
+	
+	$('.btn-input .input-group .input-group-btn button').click(function(){
+		if($(this).text()=="+"){
+			var i = $(this).parent().prev('input').val();
+			i=parseInt(i)+1;
+			$(this).parent().prev('input').val(i);
+		}else{
+			var i = $(this).parent().next('input').val();
+			if(i!=0){
+				i=parseInt(i)-1;
+				$(this).parent().next('input').val(i);
+			}
+		}
+	});
+	$('#content-A .right-tap').click(function(){
+		$(this).parent().parent().css('display','none');
+	});
+	
+	
+	shopcar_num();
 	touchfunc();
-	scrollfunc();
 });
 
 
@@ -53,3 +72,25 @@ function touchfunc(){
 		preventDefaultEvents:true
 	});
 }
+
+function shopcar_num(){
+	if($('#header .shopcar-num').text()==0){
+		$('#header .shopcar-num').css('display','none');
+	}
+}
+
+function fapiao(){
+	if($('#fapiao-radio-1').prop("checked")){
+		$('#fapiao-input-1').css('display','block');
+	}else{
+		$('#fapiao-input-1').css('display','none');
+	}
+	
+	if($('#fapiao-radio-2').prop("checked")){
+		$('#fapiao-input-2').css('display','block');
+	}else{
+		$('#fapiao-input-2').css('display','none');
+	}
+}
+	
+
