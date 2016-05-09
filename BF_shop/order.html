@@ -15,13 +15,13 @@
 		<nav id="mynavbar" class="navbar navbar-inverse navbar-static-top">
 		  <div id="header" class="container-fluid">
 		    <a href=""><span class="pull-left icon-one glyphicon glyphicon-menu-left"></span></a>
-		    <p class="icon-two">确认下单</p>
+		    <span class="icon-two">确认下单</span>
 		  </div>
 		</nav>
 		
 		<!--没地址的-->
 		<div id="content-a">
-			<a href="">
+			<a href="address.html">
 				<div>
 					<span>添加新地址</span>
 					<span class="pull-right glyphicon glyphicon-menu-right"></span>
@@ -30,7 +30,7 @@
 		</div>
 		<!--有地址的-->
 		<div id="content-a">
-			<a href="">
+			<a href="address-mod.html">
 				<div class="name-tel">
 					<span>袁青</span>
 					<span>15527888455</span>
@@ -57,11 +57,11 @@
 			</div>
 			<div class="free">
 				<div class="dropdown">
-				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <button type="button" class="free-btn">
 				  	<span>赠品</span>
-				  	<img src="img/order-5.png"/>
+				  	<span class="glyphicon glyphicon-menu-down"></span>
 				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				  <ul>
 				    <li>
 				    	<span>[会员服务] 赠送一个月的会员</span>
 						<span class="t-right">￥0</span>
@@ -83,11 +83,11 @@
 			</div>
 			<div class="free">
 				<div class="dropdown">
-				  <button id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  <button type="button" class="free-btn">
 				  	<span>赠品</span>
-				  	<img src="img/order-5.png"/>
+				  	<span class="glyphicon glyphicon-menu-down"></span>
 				  </button>
-				  <ul class="dropdown-menu" aria-labelledby="dLabel">
+				  <ul>
 				    <li>
 				    	<span>[会员服务] 赠送一个月的会员</span>
 						<span class="t-right">￥0</span>
@@ -103,7 +103,7 @@
 		
 		<div id="content-c">
 			<div class="list-group">
-			  <a href="#" class="list-group-item">发票类型<span class="glyphicon glyphicon-menu-right"></span><span>电子发票</span></a>
+			  <a href="fapiao.html" class="list-group-item">发票类型<span class="glyphicon glyphicon-menu-right"></span><span>电子发票</span></a>
 			  <a href="#" class="list-group-item">优惠券<span class="glyphicon glyphicon-menu-right"></span></a>
 			  <a href="#" class="list-group-item">配送方式<span>快递￥0.00</span></a>
 			</div>
@@ -124,6 +124,16 @@
 					<span>微信支付</span>
 				</input>
 			  </label>
+			  <!--银联支付-->
+			  
+			  <!--<label class="btn">
+			    <input type="radio" name="options" id="option2">
+					<img src="img/yinlian.png"/>
+					<span>银联支付</span>
+				</input>
+			  </label>-->
+			  
+			  <!--。。。。-->
 			</div>
 			
 		</div>
@@ -139,7 +149,23 @@
 		<div id="content-f">
 			<span>应付金额：</span>
 			<span>￥4398</span>
-			<button>提交订单</button>
+			<a href="shopcar.html"><button>提交订单</button></a>
 		</div>
+		
+		<script type="text/javascript">
+//			$(document).ready(function(){
+//				$('.dropdown button').on('click',function(){
+//					if($(this).children().eq(1).hasClass('glyphicon-menu-down')){
+//						alert(1);
+//						$(this).children().eq(1).removeClass('glyphicon-menu-down');
+//						$(this).children().eq(1).addClass('glyphicon-menu-up');
+//					}else{
+//						alert(2);
+//						$(this).children().eq(1).removeClass('glyphicon-menu-up');
+//						$(this).children().eq(1).addClass('glyphicon-menu-down');
+//					}
+//				});
+//			});
+		</script>
 	</body>
 </html>

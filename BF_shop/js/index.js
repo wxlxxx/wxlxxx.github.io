@@ -22,6 +22,17 @@ $(document).ready(function(){
 		$(this).siblings().removeClass('active');
 	});
 	
+	$('.free button').on('click',function(){
+		$(this).next().toggle();
+		if($(this).children().hasClass('glyphicon-menu-down')){
+			$(this).children().eq(1).removeClass('glyphicon-menu-down');
+			$(this).children().eq(1).addClass('glyphicon-menu-up');
+		}else{
+			$(this).children().eq(1).removeClass('glyphicon-menu-up');
+			$(this).children().eq(1).addClass('glyphicon-menu-down');
+		}
+	});
+	
 	$('.btn-input .input-group .input-group-btn button').click(function(){
 		if($(this).text()=="+"){
 			var i = $(this).parent().prev('input').val();
@@ -29,7 +40,7 @@ $(document).ready(function(){
 			$(this).parent().prev('input').val(i);
 		}else{
 			var i = $(this).parent().next('input').val();
-			if(i!=0){
+			if(i!=1){
 				i=parseInt(i)-1;
 				$(this).parent().next('input').val(i);
 			}
