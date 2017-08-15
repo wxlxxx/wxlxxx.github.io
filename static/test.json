@@ -2,36 +2,43 @@
 	{
 		"title":"demo",
 		"desc":"nothing here",
-		"linkto":""
+		"linkto":"demo",
+		"rooter":true
 	},
 	{
 		"title":"demo1",
 		"desc":"我是demo1",
-		"linkto":"Demo1"
+		"linkto":"demo1",
+		"rooter":true
 	},
 	{
 		"title":"demo1",
 		"desc":"我是来凑数的不要点我",
-		"linkto":""
+		"linkto":"demo1",
+		"rooter":true
 	},
 	{
 		"title":"demo2",
 		"desc":"我是来凑数的",
-		"linkto":""
+		"linkto":"demo2",
+		"rooter":true
 	},
 	{
 		"title":"demo3",
 		"desc":"我是来凑数的",
-		"linkto":""
+		"linkto":"demo3",
+		"rooter":true
 	},
 	{
 		"title":"demo4",
 		"desc":"我是来凑数的不要点我",
-		"linkto":""
+		"linkto":"demo4",
+		"rooter":true
 	},
 	{
 		"title":"game2048",
 		"desc":"game2048 by jq",
-		"linkto":""
+		"linkto":"http://wxlxxx.github.io",
+		"rooter":false
 	}
 ]
