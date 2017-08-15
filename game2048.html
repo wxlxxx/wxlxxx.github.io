@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title></title>
+	<style type="text/css">
+		.content{width: 750px;height: 750px;background-color: #bbada0;margin: 0 auto;margin-top: 50px;border-radius: 8px;box-sizing: border-box;}
+		.content .row{height: 25%;padding: 20px 0;box-sizing: border-box;position: relative;}
+		.content .row .col{width: 25%;padding: 0 20px;box-sizing: border-box;height: 100%;float: left;position: relative;}
+		.content .row .col .box{background-color: #ccc0b3;height: 100%;width: 100%;border-radius: 8px;text-align: center;display: table;}
+		.content .row .col .box span{display: table-cell;vertical-align: middle;font-size: 32px;}
+		@media(max-width: 767px){
+			.content{width: 300px;height: 300px;}
+			.content .row{padding: 5px 0;}
+			.content .row .col{padding: 0 5px;}
+		}
+	</style>
+	<script type="text/javascript" src="src/vue.js"></script>
+	<script type="text/javascript" src="src/jquery.min.js"></script>
+	<script type="text/javascript" src="src/jquery.touchwipe.js"></script>
+</head>
+<body>
+	<div id="app-2048">
+		<div class="content">
+			<div class="row" v-for="item in itemArr">
+				<div class="col" v-for="item2 in item">
+					<div class="box" v-bind:style="{backgroundColor:getColor(item2)}">
+						<span>{{item2 !=0 ? item2 : ''}}</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var app_2048 = new Vue({
+			el:'#app-2048',
+			data:{
+				itemArr:[[0,0,0,0],[0,0,0,0],[0,0,0,0],[0,0,0,0]]
+			},
+			created:function(){
+				// 随机2个数字2或4在随机位置
+				this.randomNum()
+				this.randomNum()
+			},
+			methods:{
+				randomNum:function(){
+					if(!this.noplace()){
+						var i = parseInt(Math.random()*4, 10)
+						var j = parseInt(Math.random()*4, 10)
+						while(true){
+							if(this.itemArr[i][j] == 0){
+								break
+							}
+							var i = parseInt(Math.random()*4, 10)
+							var j = parseInt(Math.random()*4, 10)
+						}
+						var num = Math.random() < 0.5 ? 2 : 4
+						this.itemArr[i][j] = num
+					}else if(!canMoveLeft&&!canMoveRight&&!canMoveUp&&!canMoveDown){
+						alert('game over')
+					}
+				},
+				noplace:function(){
+					var np = true
+					this.itemArr.map(function(item){
+						item.map(function(item2){
+							if(item2 == 0){
+								np = false
+								return false
+							}
+						})
+					})
+					return np
+				},
+				getColor:function(num){
+					switch(num){
+				        case 2: return "#eee4da";break;
+				        case 4: return "#ede0c8";break;
+				        case 8: return "#f2b179";break;
+				        case 16: return "#f59563";break;
+				        case 32: return "#f67c5f";break;
+				        case 64: return "#f65e3b";break;
+				        case 128: return "#edcf72";break;
+				        case 256: return "#edcc61";break;
+				        case 512: return "#9c0";break;
+				        case 1024: return "#33b5e5";break;
+				        case 2048: return "#09c";break;
+				        case 4096: return "#a6c";break;
+				        case 8192: return "#93c";break;
+				    }
+				},
+				noBlockHorizontal:function(i,a,b){//第i行 a到b之前是否有障碍
+					var noBH = true
+					for(var j = a+1;j<b;j++){
+						if(this.itemArr[i][j] != 0){
+							noBH = false
+						}
+					}
+					return noBH
+				},
+				noBlockVertical:function(j,a,b){//第j列 a到b之前是否有障碍
+					var noBV = true
+					for(var i = a+1;i<b;i++){
+						if(this.itemArr[i][j] != 0){
+							noBV = false
+						}
+					}
+					return noBV
+				},
+				canMoveLeft:function(){
+					var canMoveLeft = false
+					for(var i = 0;i<4;i++){
+						for(var j = 1;j<4;j++){
+							if(this.itemArr[i][j] != 0){
+								if(this.itemArr[i][j-1] == 0 || this.itemArr[i][j-1] == this.itemArr[i][j]){
+									canMoveLeft = true;break
+								}
+							}
+						}
+					}
+					return canMoveLeft
+				},
+				canMoveRight:function(){
+					var canMoveRight = false
+					for(var i = 0;i<4;i++){
+						for(var j = 2;j>=0;j--){
+							if(this.itemArr[i][j] != 0){
+								if(this.itemArr[i][j+1] == 0 || this.itemArr[i][j+1] == this.itemArr[i][j]){
+									canMoveRight = true;break
+								}
+							}
+						}
+					}
+					return canMoveRight
+				},
+				canMoveUp:function(){
+					var canMoveUp = false
+					for(var j = 0;j<4;j++){
+						for( var i = 1 ; i < 4 ; i ++ ){
+							if(this.itemArr[i][j] != 0){
+								if( this.itemArr[i-1][j] == 0 || this.itemArr[i-1][j] == this.itemArr[i][j] ){
+									canMoveUp = true;break
+								}
+							}
+						}
+					}
+					return canMoveUp
+				},
+				canMoveDown:function(){
+					var canMoveDown = false
+					for(var j = 0;j<4;j++){
+						for( var i = 2 ; i >= 0 ; i -- ){
+							if(this.itemArr[i][j] != 0){
+								if( this.itemArr[i+1][j] == 0 || this.itemArr[i+1][j] == this.itemArr[i][j] ){
+									canMoveDown = true;break
+								}
+							}
+						}
+					}
+					return canMoveDown					
+				},
+				moveLeft:function(){
+					var arr = this.itemArr
+					if(this.canMoveLeft()){
+						for(var i = 0;i<4;i++){
+							for(var j=1;j<4;j++){
+								if(arr[i][j] != 0){
+									for(var k=0;k<j;k++){
+										if(this.noBlockHorizontal(i,k,j)){
+											if(arr[i][k] == 0 || arr[i][k] == arr[i][j]){
+												arr[i][k]+=arr[i][j]
+												arr[i][j] = 0
+												this.$set(this.itemArr,arr)
+											}
+										}
+									}
+								}
+							}
+						}
+						this.randomNum()
+					}
+				},
+				moveRight:function(){
+					var arr = this.itemArr
+					if(this.canMoveRight()){
+						for(var i = 0;i<4;i++){
+							for(var j=2;j>=0;j--){
+								if(arr[i][j] != 0){
+									for(var k=3;k>j;k--){
+										if(this.noBlockHorizontal(i,j,k)){
+											if(arr[i][k] == 0 || arr[i][k] == arr[i][j]){
+												arr[i][k]+=arr[i][j]
+												arr[i][j] = 0
+												this.$set(this.itemArr,arr)
+											}
+										}
+									}
+								}
+							}
+						}
+						this.randomNum()
+					}
+				},
+				moveUp:function(){
+					var arr = this.itemArr
+					if(this.canMoveUp()){
+						for(var j = 0;j<4;j++){
+							for(var i=1;i<4;i++){
+								if(arr[i][j] != 0){
+									for(var k=0;k<i;k++){
+										if(this.noBlockHorizontal(j,k,i)){
+											if(arr[k][j] == 0 || arr[k][j] == arr[i][j]){
+												arr[k][j]+=arr[i][j]
+												arr[i][j] = 0
+												this.$set(this.itemArr,arr)
+											}
+										}
+									}
+								}
+							}
+						}
+						this.randomNum()
+					}
+				},
+				moveDown:function(){
+					var arr = this.itemArr
+					if(this.canMoveDown()){
+						for(var j = 0;j<4;j++){
+							for(var i=2;i>=0;i--){
+								if(arr[i][j] != 0){
+									for(var k=3;k>i;k--){
+										if(this.noBlockHorizontal(j,i,k)){
+											if(arr[k][j] == 0 || arr[k][j] == arr[i][j]){
+												arr[k][j]+=arr[i][j]
+												arr[i][j] = 0
+												this.$set(this.itemArr,arr)
+											}
+										}
+									}
+								}
+							}
+						}
+						this.randomNum()
+					}
+				}
+			},
+			mounted:function(){
+				document.onkeydown = function(event){
+					var e = event || window.event || arguments.callee.caller.arguments[0];
+					if(e){
+						switch(e.keyCode){
+							case 37 : this.moveLeft();break
+							case 38 : this.moveUp();break
+							case 39 : this.moveRight();break
+							case 40 : this.moveDown();break
+						}
+					}
+				}.bind(this)
+			}
+		})
+
+		$(function(){
+			$(document).touchwipe({
+				wipeLeft:function(){
+					app_2048.moveLeft()
+				},
+				wipeRight:function(){
+					app_2048.moveRight()
+				},
+				wipeUp:function(){
+					app_2048.moveDown()
+				},
+				wipeDown:function(){
+					app_2048.moveUp()
+				},
+				min_move_x:20,
+				min_move_y:20,
+				preventDefaultEvents:true
+			});
+		})
+	</script>
+</body>
+</html>

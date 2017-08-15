@@ -1,19 +1,7 @@
 [
 	{
-		"title":"demo",
-		"desc":"nothing here",
-		"linkto":"demo",
-		"rooter":true
-	},
-	{
 		"title":"demo1",
 		"desc":"我是demo1",
-		"linkto":"demo1",
-		"rooter":true
-	},
-	{
-		"title":"demo1",
-		"desc":"我是来凑数的不要点我",
 		"linkto":"demo1",
 		"rooter":true
 	},
@@ -30,15 +18,27 @@
 		"rooter":true
 	},
 	{
-		"title":"demo4",
-		"desc":"我是来凑数的不要点我",
-		"linkto":"demo4",
-		"rooter":true
+		"title":"game2048",
+		"desc":"game2048 by jq",
+		"linkto":"http://wxlxxx.github.io/demo-2048.html",
+		"rooter":false
+	},
+	{
+		"title":"circle-progress",
+		"desc":"环形进度条",
+		"linkto":"http://wxlxxx.github.io/circle-progress.html",
+		"rooter":false
+	},
+	{
+		"title":"marquee",
+		"desc":"marquee效果收尾相接",
+		"linkto":"http://wxlxxx.github.io/marquee.html",
+		"rooter":false
 	},
 	{
 		"title":"game2048",
-		"desc":"game2048 by jq",
-		"linkto":"http://wxlxxx.github.io",
+		"desc":"game2048 by vue.js",
+		"linkto":"http://wxlxxx.github.io/game2048.html",
 		"rooter":false
 	}
 ]
