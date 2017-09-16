@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+	<title></title>
+	<style type="text/css">
+		.stage{background-color: #bbada0;margin: 0 auto;margin-top: 50px;border-radius: 8px;box-sizing: border-box;position: relative;}
+		.stage-box{background-color: #ccc0b3;float: left;}
+		.item{text-align: center;line-height: 2;font-size: 80px;border-radius: 8px;position: absolute;transition: all 0.5s;}
+	</style>
+	<script type="text/javascript" src="src/vue.js"></script>
+	<script type="text/javascript" src="src/lodash.min.js"></script>
+	<script type="text/javascript" src="src/jquery.min.js"></script>
+	<script type="text/javascript" src="src/jquery.touchwipe.js"></script>
+</head>
+<body>
+	<div id="app_2048">
+		<div class="stage" v-bind:style="{'width':size*num+range*(num+1)+'px','height':size*num+range*(num+1)+'px'}">
+			<div class="stage-box" v-for="item in itemArr" v-bind:style="{'margin-top':range+'px','margin-left':range+'px','width':size+'px','height':size+'px'}"></div>
+			<div class="item" v-for="item in itemArr" v-if="item.value != 0" v-bind:style="{'width':size+'px','height':size+'px','top':item.x,'left':item.y*size+(item.y+1)*range+'px','top':item.x*size+(item.x+1)*range+'px','background-color':getColor(item.value)}">{{item.value}}</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		// numArr：用于支撑游戏逻辑的二位数组
+		// itemArr：用于页面渲染和支撑动画逻辑的一维数组
+		// 移动方法重置了numArr，并且改变itemArr对应元素的左边属性，页面会自动执行动画
+		// 最后执行init方法保持itemArr与numArr的对应关系
+		// 下一步要解决的问题：目前的移动的逻辑过于复杂需重新设计
+		var app_2048 = new Vue({
+			el:'#app_2048',
+			data:{
+				num:4,
+				range:15,
+				size:160,
+				numArr:[],
+				itemArr:[]
+			},
+			created:function(){
+				for(var i=0;i<this.num;i++){
+					this.numArr[i] = new Array()
+					for(var j=0;j<this.num;j++){
+						this.numArr[i][j]=0
+					}
+				}
+				this.randomNum()
+				this.randomNum()
+				this.init()
+				console.log(this.numArr)
+				console.log(this.itemArr)
+			},
+			methods:{
+				init:function(){
+					this.itemArr = []
+					this.numArr.map(function(item,index){
+						item.map(function(item2,index2){
+							this.itemArr.push({value:item2,x:index,y:index2})
+						}.bind(this))
+					}.bind(this))
+				},
+				getColor:function(value){
+					switch(value){
+				        case 2: return "#eee4da";break;
+				        case 4: return "#ede0c8";break;
+				        case 8: return "#f2b179";break;
+				        case 16: return "#f59563";break;
+				        case 32: return "#f67c5f";break;
+				        case 64: return "#f65e3b";break;
+				        case 128: return "#edcf72";break;
+				        case 256: return "#edcc61";break;
+				        case 512: return "#9c0";break;
+				        case 1024: return "#33b5e5";break;
+				        case 2048: return "#09c";break;
+				        case 4096: return "#a6c";break;
+				        case 8192: return "#93c";break;
+				    }
+				},
+				randomNum:function(){
+					if(!this.noplace()){
+						var i = parseInt(Math.random()*this.num, 10)
+						var j = parseInt(Math.random()*this.num, 10)
+						while(true){
+							if(this.numArr[i][j] == 0){
+								break
+							}
+							var i = parseInt(Math.random()*this.num, 10)
+							var j = parseInt(Math.random()*this.num, 10)
+						}
+						var num = Math.random() < 0.5 ? 2 : 4
+						this.numArr[i][j] = num
+					}
+				},
+				noplace:function(){
+					var noplace = true
+					this.numArr.map(function(item){
+						item.map(function(item2){
+							if(item2 == 0){
+								noplace = false
+								return false
+							}
+						})
+					})
+					return noplace
+				},
+				noBlockHorizontal:function(i,a,b){
+					var noBH = true
+					for(var j = a+1;j<b;j++){
+						if(this.numArr[i][j] != 0){
+							noBH = false
+						}
+					}
+					return noBH
+				},
+				canMoveLeft:function(){
+					var canMoveLeft = false
+					for(var i = 0;i<this.num;i++){
+						for(var j = 1;j<this.num;j++){
+							if(this.numArr[i][j] != 0){
+								if(this.numArr[i][j-1] == 0 || this.numArr[i][j-1] == this.numArr[i][j]){
+									canMoveLeft = true;break
+								}
+							}
+						}
+					}
+					return canMoveLeft
+				},
+				moveLeft:function(){
+					if(this.canMoveLeft()){
+						for(var i = 0;i<this.num;i++){
+							for(var j=1;j<this.num;j++){
+								if(this.numArr[i][j] != 0){
+									for(var k=0;k<j;k++){
+										if(this.noBlockHorizontal(i,k,j)){
+											if(this.numArr[i][k] == 0 || this.numArr[i][k] == this.numArr[i][j]){
+												this.itemArr[this.num*i+j].y = this.itemArr[this.num*i+k].y
+												this.numArr[i][k] += this.numArr[i][j]
+												this.numArr[i][j] = 0
+												break
+											}
+										}
+									}
+								}
+							}
+						}
+						setTimeout(function(){
+							this.randomNum()
+							this.init()
+						}.bind(this),500)
+					}
+					console.log(this.numArr)
+				}
+			},
+			mounted:function(){
+				document.onkeydown = function(event){
+					var e = event || window.event || arguments.callee.caller.arguments[0];
+					if(e){
+						switch(e.keyCode){
+							case 37 : this.moveLeft();break
+							case 38 : this.moveUp();break
+							case 39 : this.moveRight();break
+							case 40 : this.moveDown();break
+						}
+					}
+				}.bind(this)
+			}
+		})
+
+		// $(function(){
+		// 	$(document).touchwipe({
+		// 		wipeLeft:function(){
+		// 			app_2048.moveLeft()
+		// 		},
+		// 		wipeRight:function(){
+		// 			app_2048.moveRight()
+		// 		},
+		// 		wipeUp:function(){
+		// 			app_2048.moveDown()
+		// 		},
+		// 		wipeDown:function(){
+		// 			app_2048.moveUp()
+		// 		},
+		// 		min_move_x:20,
+		// 		min_move_y:20,
+		// 		preventDefaultEvents:true
+		// 	});
+		// })
+	</script>
+</body>
+</html>
