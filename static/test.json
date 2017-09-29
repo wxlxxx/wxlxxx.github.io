@@ -12,12 +12,6 @@
 		"rooter":true
 	},
 	{
-		"title":"demo3",
-		"desc":"我是来凑数的",
-		"linkto":"demo3",
-		"rooter":true
-	},
-	{
 		"title":"game2048",
 		"desc":"game2048 by jq",
 		"linkto":"http://wxlxxx.github.io/demo-2048.html",
@@ -39,6 +33,12 @@
 		"title":"game2048",
 		"desc":"game2048 by vue.js",
 		"linkto":"http://wxlxxx.github.io/game2048.html",
+		"rooter":false
+	},
+	{
+		"title":"page-group",
+		"desc":"page-group",
+		"linkto":"http://wxlxxx.github.io/page-group.html",
 		"rooter":false
 	}
 ]
