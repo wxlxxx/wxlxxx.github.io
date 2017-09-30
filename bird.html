@@ -6,18 +6,49 @@
 	<title></title>
 	<script type="text/javascript" src="src/vue.js"></script>
 </head>
-<body id="app">
-	<canvas id="myCanvas"></canvas>
-
+<body>
+	<div id="app">
+		<canvas ref="myCanvas"></canvas>
+	</div>
 
 	<script type="text/javascript">
 		new Vue({
-			el:#app,
+			el:'#app',
 			data:{
-
+				width:500,
+				height:300,
+				wallWidth:50,
+				passHeight:50,
+				wallColor:'#268e00'
 			},
 			created:function(){
-				
+				var topWallHeight = parseInt(Math.random()*(this.height-this.passHeight*2)+this.passHeight)
+				this.drawWallAnimate(this.width,-this.wallWidth,topWallHeight)
+			},
+			methods:{
+				// 画障碍
+				drawWall:function(_X,_height,_topWallHeight){
+		            this.$nextTick(function(){
+		            	var canvas = this.$refs.myCanvas
+			            canvas.width = this.width
+			            canvas.height = this.height
+			            var ctx = canvas.getContext("2d")
+			            ctx.beginPath()
+			            ctx.fillStyle = this.wallColor
+
+			            ctx.fillRect(_X,0,this.wallWidth,_topWallHeight)
+			            ctx.fillRect(_X,_topWallHeight+this.passHeight,this.wallWidth,_height-_topWallHeight-this.passHeight)
+		            }.bind(this))
+				},
+				drawWallAnimate:function(oldVal,newVal,_topWallHeight){
+					requestAnimationFrame(function(){
+	                    oldVal -= 2
+	                    this.drawWall(oldVal,this.height,_topWallHeight)
+	                    if(oldVal!=newVal){
+	                        this.drawWallAnimate(oldVal,newVal,_topWallHeight)
+	                    }
+	                }.bind(this));
+				}
 			}
 		})
 	</script>
