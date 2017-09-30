@@ -40,5 +40,11 @@
 		"desc":"page-group",
 		"linkto":"http://wxlxxx.github.io/page-group.html",
 		"rooter":false
+	},
+	{
+		"title":"process-canvas",
+		"desc":"process-canvas",
+		"linkto":"http://wxlxxx.github.io/process-canvas.html",
+		"rooter":false
 	}
 ]
