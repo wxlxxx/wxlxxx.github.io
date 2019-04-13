@@ -1,13 +1,13 @@
 <template>
-	<router-view/>
+	<div>222</div>
 </template>
 
 <script>
 	export default {
-		name: 'App',
+		name: 'Stage2'
 	}
 </script>
 
-<style lang="scss">
-
+<style>
+	
 </style>

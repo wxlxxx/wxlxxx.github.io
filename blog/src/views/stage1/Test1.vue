@@ -1,13 +1,13 @@
 <template>
-	<router-view/>
+	<div>test1</div>
 </template>
 
 <script>
 	export default {
-		name: 'App',
+		name: 'Test1'
 	}
 </script>
 
-<style lang="scss">
-
+<style>
+	
 </style>
