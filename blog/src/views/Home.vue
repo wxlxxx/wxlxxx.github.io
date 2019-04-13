@@ -1,6 +1,6 @@
 <template>
 	<div style="height: 100vh" class="bg-dark d-flex align-items-center justify-content-center">
-		<router-link v-for="item in routes" v-if="item.level == 1" class="bg-primary rounded p-md-5 mx-5 h2 text-light" :to="item.path">{{item.name}}</router-link>
+		<router-link v-for="item in routes" v-if="item.path != currRoute.path" class="bg-primary rounded p-md-5 mx-5 h2 text-light" :to="item.path">{{item.name}}</router-link>
 	</div>
 </template>
 
@@ -9,11 +9,13 @@
 		name: 'Home',
 		data(){
 			return {
-				routes: null
+				routes: null,
+				currRoute: null
 			}
 		},
 		created(){
 			this.routes = this.$router.options.routes
+			this.currRoute = this.$route
 		}
 	}
 </script>

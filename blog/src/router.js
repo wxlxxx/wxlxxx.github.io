@@ -4,8 +4,10 @@ import Home from './views/Home.vue'
 import Stage1 from './views/Stage1.vue'
 import Stage2 from './views/Stage2.vue'
 
-import Test1 from './views/stage1/Test1.vue'
-import Test2 from './views/stage1/Test2.vue'
+import Stage1List from './views/stage1/Stage1List.vue'
+import Doc1 from './views/stage1/Doc1.vue'
+import Doc2 from './views/stage1/Doc2.vue'
+import Doc3 from './views/stage1/Doc3.vue'
 
 Vue.use(Router)
 
@@ -14,34 +16,41 @@ export default new Router({
     {
       path: '/',
       name: 'home',
-      component: Home,
-      level: 0
+      component: Home
     },
     {
-  		path: '/stage1',
+  		path: '/stage1/',
   		name: 'javascript基础',
   		component: Stage1,
-      level: 1
+      children: [
+        {
+          path: '',
+          name: 'javascript基础',
+          component: Stage1List
+        },
+        {
+          path: 'doc1',
+          name: 'javascript数据类型及检测方法',
+          component: Doc1
+        },
+        {
+          path: 'doc2',
+          name: '原型链',
+          component: Doc2
+        },
+        {
+          path: 'doc23',
+          name: 'AJAX',
+          component: Doc3
+        },
+      ]
   	},
   	{
   		path: '/stage2',
   		name: 'javascript应用',
-  		component: Stage2,
-      level: 1
+  		component: Stage2
   	},
 
-    {
-      path: '/stage1/test1',
-      name: 'test1',
-      component: Test1,
-      level: 2
-    },
-    {
-      path: '/stage1/test2',
-      name: 'test2',
-      component: Test2,
-      level: 2
-    },
     // {
     //   path: '/about',
     //   name: 'about',
