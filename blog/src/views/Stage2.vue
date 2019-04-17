@@ -1,5 +1,11 @@
 <template>
-	<div>222</div>
+	<div class="bg-dark py-5" style="min-height: 100vh;">
+		<div class="container">
+			<div class="bg-light p-5 rounded">
+				<router-view/>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
@@ -8,6 +14,6 @@
 	}
 </script>
 
-<style>
-	
+<style scoped lang="scss">
+
 </style>

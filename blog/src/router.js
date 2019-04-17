@@ -9,6 +9,9 @@ import Doc1 from './views/stage1/Doc1.vue'
 import Doc2 from './views/stage1/Doc2.vue'
 import Doc3 from './views/stage1/Doc3.vue'
 
+import Stage2List from './views/stage2/Stage2List.vue'
+import Demo1 from './views/stage2/Demo1.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -46,9 +49,21 @@ export default new Router({
       ]
   	},
   	{
-  		path: '/stage2',
+  		path: '/stage2/',
   		name: 'javascript应用',
-  		component: Stage2
+  		component: Stage2,
+      children: [
+        {
+          path: '',
+          name: 'javascript应用',
+          component: Stage2List
+        },
+        {
+          path: 'demo1',
+          name: 'CreateJs应用案例',
+          component: Demo1
+        }
+      ]
   	},
 
     // {
