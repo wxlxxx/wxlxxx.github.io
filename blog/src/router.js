@@ -3,6 +3,7 @@ import Router from 'vue-router'
 import Home from './views/Home.vue'
 import Stage1 from './views/Stage1.vue'
 import Stage2 from './views/Stage2.vue'
+import Stage3 from './views/Stage3.vue'
 
 import Stage1List from './views/stage1/Stage1List.vue'
 import Doc1 from './views/stage1/Doc1.vue'
@@ -12,6 +13,9 @@ import Doc3 from './views/stage1/Doc3.vue'
 import Stage2List from './views/stage2/Stage2List.vue'
 import Demo1 from './views/stage2/Demo1.vue'
 import Demo2 from './views/stage2/Demo2.vue'
+
+import Stage3List from './views/stage3/Stage3List.vue'
+import Share1 from './views/stage3/Share1.vue'
 
 Vue.use(Router)
 
@@ -71,6 +75,23 @@ export default new Router({
         }
       ]
   	},
+    {
+      path: '/stage3/',
+      name: '内部分享',
+      component: Stage3,
+      children: [
+        {
+          path: '',
+          name: '内部分享',
+          component: Stage3List
+        },
+        {
+          path: 'share1',
+          name: 'A pixel is not a pixel is not a pixel',
+          component: Share1
+        }
+      ]
+    },
 
     // {
     //   path: '/about',

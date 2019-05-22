@@ -1,7 +1,11 @@
 module.exports = {
 	configureWebpack: config => {
 		config.externals = {
-	      createjs: "createjs"
+	      createjs: {
+	          commonjs: 'createjs',
+	          amd: 'createjs',
+	          root: 'createjs'
+	      }
 	    }
 	}
 }
