@@ -13,20 +13,19 @@
 			</section>
 			<section>
 				<h4>1.1、PX到底是什么？</h4>
-				<p class="fragment"><small>px是pixel（像素）的缩写根据 维基百科的解释，它是图像显示的基本单元，既不是一个确定的物理量，也不是一个点或者小方块，而是一个抽象概念</small></p>
-				<p class="fragment"><small>不同的设备，图像基本采样单元是不同的，显示器上的物理像素等于显示器的点距,而打印机的物理像素等于打印机的墨点</small></p>
+				<p class="fragment"><small>是图像显示的基本单元。不能够再切割成更小单位或是元素，以单一颜色存在。</small></p>
+				<p class="fragment"><small>不同的设备，图像基本采样单元是不同的</small></p>
 				<p class="fragment"><small>所以在谈论像素时一定要清楚它的上下文</small></p>
 			</section>
 			<section id="fragments">
 				<h4>1.2、CSS像素</h4>
-				<p>CSS像素是虚拟像素，可以理解为“直觉”像素，CSS和JS使用的抽象单位，浏览器内的一切长度都是以CSS像素为单位的，CSS像素的单位是px。</p>
+				<p class="fragment"><small>CSS像素是虚拟像素(逻辑像素)，是相对设备像素(device pixel)而言的，浏览器内的一切长度都是以CSS像素为单位的.</small></p>
 				<p class="fragment"><small>在不同的设备之间，每1个CSS像素所代表的物理像素是可以变化的</small></p>
 				<p class="fragment"><small>在同样一个设备上，每1个CSS像素所代表的物理像素是可以变化的</small></p>
 			</section>
 			<section>
-				<h4>1.3、物理像素(设备像素dp/pt)</h4>
-				<p class="fragment"><small>顾名思义，显示屏是由一个个物理像素点组成的，通过控制每个像素点的颜色，使屏幕显示出不同的图像，屏幕从工厂出来那天起，它上面的物理像素点就固定不变了，单位pt</small></p>
-				<p class="fragment"><small>pt在css单位中属于真正的绝对单位，1pt = 1/72(inch),inch及英寸，而1英寸等于2.54厘米。</small></p>
+				<h4>1.3、物理像素(设备像素)</h4>
+				<p class="fragment"><small>顾名思义，显示屏是由一个个物理像素点组成的，通过控制每个像素点的颜色，使屏幕显示出不同的图像，屏幕从工厂出来那天起，它上面的物理像素点就固定不变了。</small></p>
 			</section>
 			<section>
 				<h4>1.4、DPR(设备像素比)</h4>
@@ -34,10 +33,11 @@
 				<p class="fragment"><small>默认情况下一个CSS像素应该是等于一个物理像素的宽度的，但是浏览器的放大操作让一个CSS像素等于了多个设备像素宽度</small></p>
 				<p class="fragment"><small>DPR(设备像素比) = 设备像素/CSS像素</small></p>
 				<p class="fragment"><small>1px=(dpr)^2*dp,</small></p>
-				<p class="fragment"><small>栗子</small></p>
+				<p class="fragment"><small><a href="https://www.baidu.com/" target="_blank"><img style="width:50px;" src="../../assets/img/lizi.jpg"></a></small></p>
 			</section>
 			<section>
-				<h4>1.5、DIP（设备独立像素/逻辑像素）</h4>
+				<h4>1.5、DIP（设备独立像素）</h4>
+				<p class="fragment"><small>与设备无关的逻辑像素，代表可以通过程序控制使用的虚拟像素，是一个总体概念，包括了CSS像素</small></p>
 				<p class="fragment"><small>window对象有一个devicePixelRatio属性，它的官方的定义为：设备物理像素和设备独立像素的比例，也就是 devicePixelRatio = 物理像素 / 独立像素。</small></p>
 				<p class="fragment">
 					<small>设备独立像素与物理像素的对应关系</small>
@@ -70,7 +70,7 @@
 				<p class="fragment"><small>但如果以浏览器的可视区域作为viewport的话,那些为桌面浏览器设计的网站会挤作一团或布局乱掉</small></p>
 				<p class="fragment"><small>浏览器就决定默认情况下把viewport设为一个较宽的值，比如980px</small></p>
 				<p class="fragment"><small>这个浏览器默认的viewport叫做 layout viewport</small></p>
-				<p class="fragment"><small>栗子</small></p>
+				<p class="fragment"><small><a href="https://www.sznsyy.net/" target="_blank"><img style="width:50px;" src="../../assets/img/lizi.jpg"></a></small></p>
 			</section>
 			<section>
 				<h4>2.2、visual viewport</h4>
@@ -95,7 +95,7 @@
 				</p>
 				<p class="fragment"><small>只设置width=device-width 在iphone和ipad上，无论是竖屏还是横屏，宽度都是竖屏时ideal viewport的宽度</small></p>
 				<p class="fragment"><small>只设置initial-scale=1 windows phone 上的IE 无论是竖屏还是横屏都把宽度设为竖屏时 ideal viewport 的宽度</small></p>
-				<p class="fragment"><small>栗子</small></p>
+				<p class="fragment"><small><a href="https://www.baidu.com/" target="_blank"><img style="width:50px;" src="../../assets/img/lizi.jpg"></a></small></p>
 			</section>
 			<section>
 				<h4>2.5、initial-scale的默认值</h4>
