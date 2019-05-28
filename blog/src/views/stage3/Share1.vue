@@ -110,6 +110,11 @@
 			<section>
 				<h3>4、retina屏情况下网页图片问题</h3>
 			</section>
+			<section>
+				<h4>4.1、retina屏下查看默认大小图片会模糊</h4>
+				<p class="fragment"><small>在普通屏幕下，1个位图像素对应着1个物理像素，图片可以完美的显示。可是在retina屏幕下，1个位图像素对应着4个物理像素，由于位图像素不可以再分割，所以图片就会只能就进取色，导致图片模糊。</small></p>
+				<div><img src="../../assets/img/demo5.jpeg" alt=""></div>
+			</section>
 		</div>
 	</div>
 </template>
