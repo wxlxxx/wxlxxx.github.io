@@ -16,6 +16,7 @@
 				<p class="fragment"><small>是图像显示的基本单元。不能够再切割成更小单位或是元素，以单一颜色存在。</small></p>
 				<p class="fragment"><small>不同的设备，图像基本采样单元是不同的</small></p>
 				<p class="fragment"><small>所以在谈论像素时一定要清楚它的上下文</small></p>
+				<p class="fragment"><small><img style="width:300px;" src="../../assets/img/demo6.jpg"></small></p>
 			</section>
 			<section id="fragments">
 				<h4>1.2、CSS像素</h4>
@@ -104,16 +105,33 @@
 			</section>
 
 			<section>
-				<h3>3、非retina屏情况下网页图片问题</h3>
+				<h3>3、网页图片问题</h3>
+				<p class="fragment"><small>用像素描述图片大小脱离显示设备毫无意义</small></p>
+				<p class="fragment"><small>普通位图记录着显示设备需要多少个设备像素显示以及每个像素的颜色、位置等数据</small></p>
+				<p class="fragment"><small>比如一个图片长800像素可以理解为在DPR为1的显示器上要求用同样多的设备像素显示</small></p>
 			</section>
-
 			<section>
-				<h3>4、retina屏情况下网页图片问题</h3>
+				<h4>3.1、图片放大模糊失真</h4>
+				<p class="fragment"><small>在普通屏幕下，1个位图像素对应着1个物理像素，图片可以完美的显示。可是在放大图片或retina屏幕下，1个位图像素对应着多个物理像素，由于位图像素不可以再分割，所以图片就会只能就进取色，导致图片模糊。</small></p>
+				<div><img src="../../assets/img/demo5.jpg" alt=""></div>
 			</section>
 			<section>
-				<h4>4.1、retina屏下查看默认大小图片会模糊</h4>
-				<p class="fragment"><small>在普通屏幕下，1个位图像素对应着1个物理像素，图片可以完美的显示。可是在retina屏幕下，1个位图像素对应着4个物理像素，由于位图像素不可以再分割，所以图片就会只能就进取色，导致图片模糊。</small></p>
-				<div><img src="../../assets/img/demo5.jpeg" alt=""></div>
+				<h4>3.2、图片缩小模糊失真</h4>
+				<p class="fragment"><small>在DPR(设备像素比)不变的情况下，图片缩小即让显示设备用更少的物理像素来显示图片像素，显示设备遍会按照一定规则丢弃一些逻辑像素数据</small></p>
+				<p class="fragment"><small>
+					<div style="width:500px;display:flex;">
+						<div style="width: 50%;height:100px;background-color: red;"></div>
+						<div style="width: 50%;height:100px;background-color: #fff;"></div>
+					</div>
+				</small></p>
+			</section>
+			<section>
+				<h4>3.3、矢量图的使用</h4>
+				<p class="fragment"><small>如svg图像记录的不是像素，而是组成图片的元素的几何特性，如记录直线的起始位置、方向、长度，圆弧的圆心位置、弧度、端点位置等</small></p>
+				<p class="fragment"><small>最大的缺点是难以表现色彩层次丰富的逼真图像效果,以及浏览器兼容性要求。</small></p>
+			</section>
+			<section>
+				<h3>end</h3>
 			</section>
 		</div>
 	</div>
