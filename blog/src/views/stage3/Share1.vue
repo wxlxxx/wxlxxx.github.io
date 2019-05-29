@@ -16,7 +16,7 @@
 				<p class="fragment"><small>是图像显示的基本单元。不能够再切割成更小单位或是元素，以单一颜色存在。</small></p>
 				<p class="fragment"><small>不同的设备，图像基本采样单元是不同的</small></p>
 				<p class="fragment"><small>所以在谈论像素时一定要清楚它的上下文</small></p>
-				<p class="fragment"><small><img style="width:300px;" src="../../assets/img/demo6.jpg"></small></p>
+				<p class="fragment"><small><img style="width:300px;" src="/assets/img/demo6.jpg"></small></p>
 			</section>
 			<section id="fragments">
 				<h4>1.2、CSS像素</h4>
@@ -34,7 +34,7 @@
 				<p class="fragment"><small>默认情况下一个CSS像素应该是等于一个物理像素的宽度的，但是浏览器的放大操作让一个CSS像素等于了多个设备像素宽度</small></p>
 				<p class="fragment"><small>DPR(设备像素比) = 设备像素/CSS像素</small></p>
 				<p class="fragment"><small>1px=(dpr)^2*dp,</small></p>
-				<p class="fragment"><small><a href="https://www.baidu.com/" target="_blank"><img style="width:50px;" src="../../assets/img/lizi.jpg"></a></small></p>
+				<p class="fragment"><small><a href="https://www.baidu.com/" target="_blank"><img style="width:50px;" src="/assets/img/lizi.jpg"></a></small></p>
 			</section>
 			<section>
 				<h4>1.5、DIP（设备独立像素）</h4>
@@ -42,7 +42,7 @@
 				<p class="fragment"><small>window对象有一个devicePixelRatio属性，它的官方的定义为：设备物理像素和设备独立像素的比例，也就是 devicePixelRatio = 物理像素 / 独立像素。</small></p>
 				<p class="fragment">
 					<small>设备独立像素与物理像素的对应关系</small>
-					<div><img src="../../assets/img/demo1.jpeg" alt=""></div>
+					<div><img src="/assets/img/demo1.jpeg" alt=""></div>
 				</p>
 			</section>
 			<section>
@@ -51,8 +51,8 @@
 				<p class="fragment">
 					<small>ppi越高，每英寸像素点越多，图像越清晰</small>
 					<div>
-						<img src="../../assets/img/demo2.jpeg" alt="">
-						<img src="../../assets/img/demo3.jpeg" alt="">
+						<img src="/assets/img/demo2.jpeg" alt="">
+						<img src="/assets/img/demo3.jpeg" alt="">
 					</div>
 				</p>
 			</section>
@@ -71,14 +71,14 @@
 				<p class="fragment"><small>但如果以浏览器的可视区域作为viewport的话,那些为桌面浏览器设计的网站会挤作一团或布局乱掉</small></p>
 				<p class="fragment"><small>浏览器就决定默认情况下把viewport设为一个较宽的值，比如980px</small></p>
 				<p class="fragment"><small>这个浏览器默认的viewport叫做 layout viewport</small></p>
-				<p class="fragment"><small><a href="https://www.sznsyy.net/" target="_blank"><img style="width:50px;" src="../../assets/img/lizi.jpg"></a></small></p>
+				<p class="fragment"><small><a href="https://www.sznsyy.net/" target="_blank"><img style="width:50px;" src="/assets/img/lizi.jpg"></a></small></p>
 			</section>
 			<section>
 				<h4>2.2、visual viewport</h4>
 				<p class="fragment"><small>上文提到的layout viewport宽度是大于浏览器可视区域的宽度的</small></p>
 				<p class="fragment"><small>我们还需要一个viewport来代表 浏览器可视区域的大小,这个viewport叫做 visual viewport</small></p>
 				<p class="fragment">
-					<img src="../../assets/img/demo4.jpeg" alt="">
+					<img src="/assets/img/demo4.jpeg" alt="">
 				</p>
 			</section>
 			<section>
@@ -96,7 +96,7 @@
 				</p>
 				<p class="fragment"><small>只设置width=device-width 在iphone和ipad上，无论是竖屏还是横屏，宽度都是竖屏时ideal viewport的宽度</small></p>
 				<p class="fragment"><small>只设置initial-scale=1 windows phone 上的IE 无论是竖屏还是横屏都把宽度设为竖屏时 ideal viewport 的宽度</small></p>
-				<p class="fragment"><small><a href="https://www.baidu.com/" target="_blank"><img style="width:50px;" src="../../assets/img/lizi.jpg"></a></small></p>
+				<p class="fragment"><small><a href="https://www.baidu.com/" target="_blank"><img style="width:50px;" src="/assets/img/lizi.jpg"></a></small></p>
 			</section>
 			<section>
 				<h4>2.5、initial-scale的默认值</h4>
@@ -113,7 +113,7 @@
 			<section>
 				<h4>3.1、图片放大模糊失真</h4>
 				<p class="fragment"><small>在普通屏幕下，1个位图像素对应着1个物理像素，图片可以完美的显示。可是在放大图片或retina屏幕下，1个位图像素对应着多个物理像素，由于位图像素不可以再分割，所以图片就会只能就进取色，导致图片模糊。</small></p>
-				<div><img src="../../assets/img/demo5.jpg" alt=""></div>
+				<div><img src="/assets/img/demo5.jpg" alt=""></div>
 			</section>
 			<section>
 				<h4>3.2、图片缩小模糊失真</h4>
