@@ -142,13 +142,15 @@
 	export default {
 		name: 'Share1',
 		mounted(){
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: true,
-				transition: 'slide'
-			})
+			setTimeout(function(){
+				Reveal.initialize({
+					controls: true,
+					progress: true,
+					center: true,
+					hash: true,
+					transition: 'slide'
+				})
+			},1000)
 		}
 	}
 </script>

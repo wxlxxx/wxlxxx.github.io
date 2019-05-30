@@ -24,7 +24,7 @@ import Share1 from './views/stage3/Share1.vue'
 Vue.use(Router)
 
 export default new Router({
-  mode: 'history',
+  // mode: 'history',
   routes: [
     {
       path: '/',
