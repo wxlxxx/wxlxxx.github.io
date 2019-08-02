@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1920px" height="760px" viewBox="0 0 1920 760" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.2 (81672) - https://sketch.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0 1920 0 1920 760 0 760"></polygon>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <mask id="mask-2" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+        <use id="Rectangle-Copy-3" fill="#FF0063" fill-rule="nonzero" xlink:href="#path-1"></use>
+        <text id="Nexus-Between-You-an" fill-rule="nonzero" mask="url(#mask-2)" font-family="Exo-Black, Exo Black" font-size="67" font-weight="700" fill="#FFFFFF">
+            <tspan x="314.893" y="195">Nexus Between You and Best Influencers</tspan>
+        </text>
+    </g>
+</svg>

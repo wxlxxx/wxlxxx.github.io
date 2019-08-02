@@ -17,6 +17,7 @@ import Demo3 from './views/stage2/Demo3.vue'
 import Demo4 from './views/stage2/Demo4.vue'
 import Demo5 from './views/stage2/Demo5.vue'
 import Demo6 from './views/stage2/Demo6.vue'
+import Demo7 from './views/stage2/Demo7.vue'
 
 import Stage3List from './views/stage3/Stage3List.vue'
 import Share1 from './views/stage3/Share1.vue'
@@ -97,6 +98,11 @@ export default new Router({
           path: 'demo6',
           name: 'marquee',
           component: Demo6
+        },
+        {
+          path: 'demo7',
+          name: 'AnimateDemo',
+          component: Demo7
         }
       ]
   	},
