@@ -9,10 +9,9 @@ import Stage1List from './views/stage1/Stage1List.vue'
 import Doc1 from './views/stage1/Doc1.vue'
 import Doc2 from './views/stage1/Doc2.vue'
 import Doc3 from './views/stage1/Doc3.vue'
+import Doc4 from './views/stage1/Doc4.vue'
 
 import Stage2List from './views/stage2/Stage2List.vue'
-import Demo1 from './views/stage2/Demo1.vue'
-import Demo2 from './views/stage2/Demo2.vue'
 import Demo3 from './views/stage2/Demo3.vue'
 import Demo4 from './views/stage2/Demo4.vue'
 import Demo5 from './views/stage2/Demo5.vue'
@@ -53,9 +52,14 @@ export default new Router({
           component: Doc2
         },
         {
-          path: 'doc23',
+          path: 'doc3',
           name: 'AJAX',
           component: Doc3
+        },
+        {
+          path: 'doc4',
+          name: 'this机制',
+          component: Doc4
         },
       ]
   	},
@@ -68,16 +72,6 @@ export default new Router({
           path: '',
           name: 'javascript应用',
           component: Stage2List
-        },
-        {
-          path: 'demo1',
-          name: 'CreateJs应用案例',
-          component: Demo1
-        },
-        {
-          path: 'demo2',
-          name: 'CreateJs应用案例2',
-          component: Demo2
         },
         {
           path: 'demo3',
