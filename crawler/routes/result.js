@@ -9,6 +9,10 @@ let router = express.Router()
 
 router.post('/', (req, res) => {
 	getCookie(req.body, (cookie) => {
+		if(cookie == 'error'){
+			res.send('密码错误')
+			return
+		}
 		getWosMonthsign(cookie, (data) => {
 			let dateList = JSON.parse(data).month
 			let hoursList = JSON.parse(data).list
@@ -33,7 +37,8 @@ router.post('/', (req, res) => {
 				title: '结果页',
 				dateList: dateList,
 				hoursList: hoursList,
-				averageHours: averageHours
+				averageHours: averageHours,
+				workDays: workDays
 			})
 		})
 	})
@@ -150,13 +155,16 @@ function getCookie(postData, callback){
 		.then(function(err, res){
 			if (err) {
 				console.log(err.message+'2')
+				callback('error')
 				return
 			}
-			callback(res.header)
 		})
 		.catch(err => {
-			let cookie = err["response"]["header"]["set-cookie"][0].split(';')[0]
-			callback(defaultCookie.replace(/PHPSESSID.*?(?=\;)/,cookie))
+			console.log(err.message+'3')
+			if(err["response"]["header"]){
+				let cookie = err["response"]["header"]["set-cookie"][0].split(';')[0]
+				callback(defaultCookie.replace(/PHPSESSID.*?(?=\;)/,cookie))
+			}
 		})
     })
 }

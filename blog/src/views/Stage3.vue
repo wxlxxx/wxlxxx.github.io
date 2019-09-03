@@ -1,14 +1,19 @@
 <template>
-	<router-view/>
+	<div class="bg-dark py-5" style="min-height: 100vh;">
+		<div class="container">
+			<div class="bg-light p-5 rounded">
+				<router-view/>
+			</div>
+		</div>
+	</div>
 </template>
 
 <script>
 	export default {
-		name: 'Stage3'
+		name: 'Stage2'
 	}
 </script>
 
 <style scoped lang="scss">
-@import '~reveal.js/css/reveal.css';
-@import '~reveal.js/css/theme/moon.css';
+@import "~bootstrap/scss/bootstrap.scss";
 </style>

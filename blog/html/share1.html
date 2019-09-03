@@ -1,5 +1,14 @@
-<template>
-	<div class="reveal">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>A pixel is not a pixel is not a pixel</title>
+</head>
+<body>
+	<div class="reveal" style="background-color: #000;">
 		<div class="slides">
 			<section>
 				<h2>A pixel is not a pixel is not a pixel</h2>
@@ -135,28 +144,5 @@
 			</section>
 		</div>
 	</div>
-</template>
-
-<script>
-	import Reveal from 'reveal.js'
-	export default {
-		name: 'Share1',
-		mounted(){
-			setTimeout(function(){
-				Reveal.initialize({
-					controls: true,
-					progress: true,
-					center: true,
-					hash: true,
-					transition: 'slide'
-				})
-			},1000)
-		}
-	}
-</script>
-
-<style scoped lang="scss">
-.reveal {
-	background-color: #000;
-}
-</style>
+</body>
+</html>

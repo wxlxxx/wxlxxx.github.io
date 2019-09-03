@@ -12,6 +12,8 @@ import Doc3 from './views/stage1/Doc3.vue'
 import Doc4 from './views/stage1/Doc4.vue'
 
 import Stage2List from './views/stage2/Stage2List.vue'
+import Demo1 from './views/stage2/Demo1.vue'
+import Demo2 from './views/stage2/Demo2.vue'
 import Demo3 from './views/stage2/Demo3.vue'
 import Demo4 from './views/stage2/Demo4.vue'
 import Demo5 from './views/stage2/Demo5.vue'
@@ -19,7 +21,6 @@ import Demo6 from './views/stage2/Demo6.vue'
 import Demo7 from './views/stage2/Demo7.vue'
 
 import Stage3List from './views/stage3/Stage3List.vue'
-import Share1 from './views/stage3/Share1.vue'
 
 Vue.use(Router)
 
@@ -74,6 +75,16 @@ export default new Router({
           component: Stage2List
         },
         {
+          path: 'demo1',
+          name: 'vue数据绑定原理',
+          component: Demo1
+        },
+        {
+          path: 'demo2',
+          name: 'vue虚拟DOM原理',
+          component: Demo2
+        },
+        {
           path: 'demo3',
           name: 'Maze',
           component: Demo3
@@ -112,8 +123,8 @@ export default new Router({
         },
         {
           path: 'share1',
-          name: 'A pixel is not a pixel is not a pixel',
-          component: Share1
+          fullPath: '/share1.html',
+          name: 'A pixel is not a pixel is not a pixel'
         }
       ]
     },

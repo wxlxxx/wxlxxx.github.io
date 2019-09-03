@@ -1,22 +1,20 @@
 <template>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<h2>{{currRoute.name}}</h2>
-				<ol>
-					<li v-for="item in routes" v-if="item.path != ''">
-						<router-link :to="item.path">{{item.name}}</router-link>
-					</li>
-				</ol>
-			</section>
-		</div>
+	<div>
+		<h1 class="mb-4">{{currRoute.name}}</h1>
+		<ol>
+			<!-- <li v-for="item in routes" v-if="item.path != ''">
+				<router-link :to="item.path">{{item.name}}</router-link>
+			</li> -->
+			<li v-for="item in routes" v-if="item.path != ''">
+				<a :href="item.fullPath">{{item.name}}</a>
+			</li>
+		</ol>
 	</div>
 </template>
 
 <script>
-	import Reveal from 'reveal.js'
 	export default {
-		name: 'Stage3List',
+		name: 'Stage1List',
 		data(){
 			return {
 				routes: null,
@@ -31,24 +29,15 @@
 					this.routes = item.children
 				}
 			}.bind(this))
-		},
-		mounted(){
-			Reveal.initialize({
-				controls: true,
-				progress: true,
-				center: true,
-				hash: false,
-				transition: 'slide'
-			})
 		}
 	}
 </script>
 
 <style scoped lang="scss">
-.reveal {
-	background-color: #000;
-}
-li {
-	white-space: nowrap;
-}
+	ol {
+		padding-left: 1rem;
+		li {
+			margin-bottom: 1rem;
+		}
+	}
 </style>

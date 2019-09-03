@@ -1,5 +1,5 @@
 <template>
-	<div style="height: 100vh" class="bg-dark d-flex align-items-center justify-content-center">
+	<div style="min-height: 100vh" class="bg-dark d-flex align-items-center justify-content-center">
 		<router-link v-for="item in routes" v-if="item.path != currRoute.path" class="bg-primary rounded p-md-5 mx-5 h2 text-light" :to="item.path">{{item.name}}</router-link>
 	</div>
 </template>

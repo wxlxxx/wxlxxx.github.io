@@ -8,3 +8,10 @@ new Vue({
 	router,
 	render: h => h(App)
 }).$mount('#app')
+
+
+if(document.querySelectorAll('.reveal').length > 0){
+    require.ensure([],function(){
+        const _ = require('./assets/js/revealdemo.js')
+    },'revealdemo')
+}
