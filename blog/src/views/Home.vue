@@ -21,7 +21,6 @@
 </script>
 
 <style scoped lang="scss">
-@import "~bootstrap/scss/bootstrap.scss";
 a {
 	&:hover {
 		text-decoration: none !important;

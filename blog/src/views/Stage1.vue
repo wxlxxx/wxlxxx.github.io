@@ -14,6 +14,5 @@
 	}
 </script>
 
-<style lang="scss">
-@import "~bootstrap/scss/bootstrap.scss";
+<style lang="scss" scoped>
 </style>
