@@ -32,8 +32,6 @@
 </script>
 
 <style scoped lang="scss">
-@import "~bootstrap/scss/bootstrap.scss";
-
 @keyframes animateDemo {
 	0% {
 		clip-path: polygon(0% 0%, 40% 0, 60% 100%, 0% 100%);
