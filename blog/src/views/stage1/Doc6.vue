@@ -64,7 +64,7 @@
 
 <script>
 	export default {
-		name: 'Demo2',
+		name: 'Doc6',
 		data(){
 			return {
 				currRoute: null

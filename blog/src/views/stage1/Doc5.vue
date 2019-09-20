@@ -149,7 +149,7 @@
 
 <script>
 	export default {
-		name: 'Demo3',
+		name: 'Doc5',
 		data(){
 			return {
 				currRoute: null,

@@ -13,6 +13,11 @@
 			<tr>
 				<td>构造函数</td>
 				<td>
+					<ol>
+						<li>首字母大写（建议构造函数首字母大写，即使用大驼峰命名，非构造函数首字母小写）</li>
+						<li>内部使用this</li>
+						<li>使用 new生成实例</li>
+					</ol>
 					function foo(){} <br>
 					var obj =new foo()
 				</td>
@@ -33,7 +38,7 @@
 
 <script>
 	export default {
-		name: 'Doc1',
+		name: 'Doc2',
 		data(){
 			return {
 				currRoute: null

@@ -93,7 +93,7 @@
 
 <script>
 	export default {
-		name: 'Doc1',
+		name: 'Doc4',
 		data(){
 			return {
 				currRoute: null
