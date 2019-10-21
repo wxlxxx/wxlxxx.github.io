@@ -13,6 +13,7 @@ import Doc4 from './views/stage1/Doc4.vue'
 import Doc5 from './views/stage1/Doc5.vue'
 import Doc6 from './views/stage1/Doc6.vue'
 import Doc7 from './views/stage1/Doc7.vue'
+import Doc8 from './views/stage1/Doc8.vue'
 
 import Stage2List from './views/stage2/Stage2List.vue'
 import Demo3 from './views/stage2/Demo3.vue'
@@ -77,6 +78,11 @@ export default new Router({
           path: 'doc7',
           name: 'javascript面向对象编程',
           component: Doc7
+        },
+        {
+          path: 'doc8',
+          name: 'es6+ 新特性',
+          component: Doc8
         },
       ]
   	},
