@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>share2</title>
+</head>
+<body>
+	<div class="reveal" style="background-color: #000;">
+		<div class="slides">
+			<section>
+				<h2>如何打造一款高质量的单页应用</h2>
+			</section>
+			<section style="text-align: left;">
+				<h3>目录</h3>
+				<h4>1. 什么是单页应用</h4>
+				<h4>2. 开发单页应用注意事项</h4>
+				<h4>3. 框架/语言的选择</h4>
+				<h4>4. 工具选择</h4>
+				<h4>5. 搭建项目脚手架</h4>
+				<h4>6. 程序设计/架构方案</h4>
+				<h4>7. 案例分析</h4>
+			</section>
+			<section>
+				<h4>1.1 什么是单页应用</h4>
+				<p class="fragment">
+					<small>只有一张Web页面的应用,单页面跳转仅刷新局部资源, 是一种从Web服务器加载的富客户端, 公共资源(js、css等)仅需加载一次</small>
+					<img src="images/demo7.png" alt="">
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<h4>1.2 单页应用的优点</h4>
+				<p class="fragment"><small>1. 操作体验流畅（资源加载完运行在本地，与服务端基本只有数据的交互）</small></p>
+				<p class="fragment"><small>2. 组件化的维护 (易于拓展与移植)</small></p>
+				<p class="fragment"><small>3. 良好的前后端分离 (前端负视图、路由、一定的业务逻辑。。)</small></p>
+			</section>
+			<section style="text-align: left;">
+				<h4>1.2 单页应用的缺点</h4>
+				<p class="fragment"><small>1. 首次加载大量资源 (要注重模块化开发和架构设计)</small></p>
+				<p class="fragment"><small>2. 搜索引擎不友好</small></p>
+				<p class="fragment"><small>3. 开发难度相对较高</small></p>
+			</section>
+			<section style="text-align: left;">
+				<h4>2.1 开发单页应用注意事项</h4>
+				<p class="fragment"><small>1. 选择恰当的开发框架</small></p>
+				<p class="fragment"><small>2. 代码合并与分割、加载策略</small></p>
+				<p class="fragment"><small>3. 路由与状态的管理</small></p>
+				<p class="fragment"><small>4. 缓存与本地存储</small></p>
+			</section>
+			<section style="text-align: left;">
+				<h4>3.1 语言/框架的选择</h4>
+				<p class="fragment"><small>原生html css js开发效率低、代码臃肿不优雅</small></p>
+				<p class="fragment">
+					<img style="width: 200px;" src="images/sass.png" alt="">
+					<img style="width: 200px;" src="images/LESS_logo.svg" alt="">
+					<img style="width: 200px;" src="images/react.png" alt="">
+					<img style="width: 200px;" src="images/vue.png" alt="">
+					<img style="width: 200px;" src="images/jsx.jpg" alt="">
+					<img style="width: 200px;" src="images/ts.png" alt="">
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<h4>3.2 javascript框架的选取的原则</h4>
+				<p class="fragment"><small>1.高效的渲染能力</small></p>
+				<p class="fragment"><small>2.响应式组件</small></p>
+				<p class="fragment"><small>3.强大的开发者社区</small></p>
+			</section>
+			<section style="text-align: left;">
+				<h4>4.1 开发工具</h4>
+				<p class="fragment"><small>把有规律的、繁琐的、重复的交给工具去做</small></p>
+				<p class="fragment">
+					<img style="width: 200px;" src="images/grunt.jpg" alt="">	
+					<img style="width: 200px;" src="images/gulp.png" alt="">	
+					<img style="width: 200px;" src="images/webpack.png" alt="">	
+					<img style="width: 200px;" src="images/npm.png" alt="">
+					<img style="width: 200px;" src="images/node.png" alt="">	
+				</p>
+			</section>
+			<section style="text-align: left;">
+				<h4>5.1 搭建项目脚手架</h4>
+				<p class="fragment"><small>1. 官方项目生成器</small></p>
+				<p class="fragment">react-create-app</p>
+				<p class="fragment">vue-cli</p>
+				<p class="fragment"><small>2. 使用第三方命令行工具生成</small></p>
+				<p class="fragment"><a href="https://yeoman.io/">yeoman</a></p>
+				<p class="fragment"><small>3. 自行配置搭建</small></p>
+			</section>
+		</div>
+	</div>
+</body>
+</html>

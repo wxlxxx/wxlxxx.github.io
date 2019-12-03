@@ -137,6 +137,11 @@ export default new Router({
           path: 'share1',
           fullPath: '/share1.html',
           name: 'A pixel is not a pixel is not a pixel'
+        },
+        {
+          path: 'share2',
+          fullPath: '/share2.html',
+          name: '如何打造一款高质量的web单页应用'
         }
       ]
     },
