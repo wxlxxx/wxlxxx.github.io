@@ -33,14 +33,24 @@
 			<section style="text-align: left;">
 				<h4>1.2 单页应用的优点</h4>
 				<p class="fragment"><small>1. 操作体验流畅（资源加载完运行在本地，与服务端基本只有数据的交互）</small></p>
-				<p class="fragment"><small>2. 组件化的维护 (易于拓展与移植)，单页应用里一切皆组件。</small></p>
-				<p class="fragment"><small>3. 良好的前后端分离 (前端负视图、路由、一定的业务逻辑。。)</small></p>
+				<p class="fragment"><small>2. 组件化的维护 (后面介绍维护组件相比维护页面的好处)。</small></p>
+				<p class="fragment"><small>3. 良好的前后端分离 (前端负责视图渲染、路由、一定的业务逻辑。。)</small></p>
 				<p class="fragment">
 					<img style="width: 500px;" src="images/front-back.png" alt="">
 				</p>
 			</section>
 			<section style="text-align: left;">
-				<h4>1.2 单页应用的缺点</h4>
+				<h4>1.3 维护组件相比维护页面的好处</h4>
+				<p class="fragment"><small>1.组件具有也必须具有高内聚低耦合的特点</small></p>
+				<p class="fragment">
+					<small>2.避免牵一发而动全身</small><br/>
+					<img style="width: 400px;" src="images/repaire.webp" alt="">
+				</p>
+				<p class="fragment"><small>3.避免同样的逻辑在多个地方重复书写</small></p>
+				<p class="fragment"><small>4.更好的团队开发分工</small></p>
+			</section>
+			<section style="text-align: left;">
+				<h4>1.4 单页应用的缺点</h4>
 				<p class="fragment"><small>1. 首次加载大量资源 (要注重模块化开发和架构设计)</small></p>
 				<p class="fragment"><small>2. 搜索引擎不友好</small></p>
 				<p class="fragment"><small>3. 开发难度相对较高</small></p>
@@ -54,7 +64,7 @@
 			</section>
 			<section style="text-align: left;">
 				<h4>3.1 语言/框架的选择</h4>
-				<p class="fragment"><small>原生html css js开发效率低、代码臃肿不够优雅</small></p>
+				<p class="fragment"><small>原生html css js开发效率低、代码臃肿不够优雅，JavaScript与ECMAScript不同步</small></p>
 				<p class="fragment">
 					<img style="width: 200px;" src="images/sass.png" alt="">
 					<img style="width: 200px;" src="images/LESS_logo.svg" alt="">
@@ -63,7 +73,6 @@
 					<img style="width: 200px;" src="images/jsx.jpg" alt="">
 					<img style="width: 200px;" src="images/ts.png" alt="">
 				</p>
-				<p class="fragment"><small>利用框架提高效率，增强规范性，提供组件化方案</small></p>
 			</section>
 			<section style="text-align: left;">
 				<h4>4.1 开发工具</h4>
@@ -87,21 +96,27 @@
 			</section>
 			<section style="text-align: left;">
 				<h4>6.1 程序设计/架构方案</h4>
-				<p class="fragment"><small>1.功能拆分、解耦合/分工</small></p>
+				<p class="fragment"><small>1.功能拆分、分工</small></p>
 				<p class="fragment"><small>2.流程图</small></p>
-				<p class="fragment"><small>3.组件化的实现</small></p>
+				<p class="fragment"><small>3.组件的封装、算法的实现</small></p>
+				<p class="fragment"><small>4.模块化的实现</small></p>
 			</section>
 			<section style="text-align: left;">
 				<h4>6.2 状态管理</h4>
-				<h5>以<a href="https://redux.js.org/" target="_blank">redux</a>思想为例说明</h5>
-				<p class="fragment"><small>1.Web 应用是一个状态机，视图与状态是一一对应的。</small></p>
-				<p class="fragment"><small>2.所有的状态，保存在一个对象里面。</small></p>
-				<p class="fragment"><small>3.Redux 规定， 一个 State 对应一个 View。只要 State 相同，View 就相同。你知道 State，就知道 View 是什么样，反之亦然。</small></p>
-				<p class="fragment"><small>4.由Store、Action、Reducer三部分组成</small></p>
+				<p class="fragment"><small>Web 单页应用就是一个状态机，视图与状态是一一对应的。</small></p>
+				<p class="fragment"><small>以<a href="https://redux.js.org/" target="_blank">redux</a>思想为例说明</small></p>
+				<p class="fragment"><small>1.所有的状态，保存在一个对象里面。</small></p>
+				<p class="fragment"><small>2.Redux 规定， 一个 State 对应一个 View。只要 State 相同，View 就相同。你知道 State，就知道 View 是什么样，反之亦然。</small></p>
+				<p class="fragment"><small>3.由Store、Action、Reducer三部分组成</small></p>
 			</section>
 			<section style="text-align: left;">
 				<h5>redux</h5>
 				<p class="fragment"><img src="images/redux.jpg" alt=""></p>
+			</section>
+			<section>
+				<h4>6.2 案例分析</h4>
+				<p><a href="http://support.wondershare.com/">http://support.wondershare.com/</a></p>
+				<p><a href="http://git.wondershare.cn/CPStudio/CMS/tree/develop/public/support-center">Source</a></p>
 			</section>
 		</div>
 	</div>
