@@ -1,9 +1,9 @@
 <template>
 	<div>
 		<h2 class="mb-4">{{currRoute.name}}</h2>
-		<div class="row no-gutters">
+		<div class="row no-gutters flex-nowrap">
 			<div class="col" v-for="(color,i) in colors" :key="i">
-				<div class="p-4" :style="{backgroundColor: color}"></div>
+				<div :class="'p-4 ' + (i>=6 ? 'text-white' : 'text-dark')" :style="{backgroundColor: color}">{{color}}</div>
 			</div>
 		</div>
 		<div class="py-3">
