@@ -13,6 +13,7 @@ import Doc5 from './views/stage1/Doc5.vue'
 import Doc6 from './views/stage1/Doc6.vue'
 import Doc7 from './views/stage1/Doc7.vue'
 import Doc8 from './views/stage1/Doc8.vue'
+import Doc9 from './views/stage1/Doc9.vue'
 
 import Stage2List from './views/stage2/Stage2List.vue'
 import Demo1 from './views/stage2/Demo1.vue'
@@ -38,51 +39,56 @@ export default new Router({
       name: 'javascript基础',
       component: Stage1,
       children: [
-      {
-        path: '',
-        name: 'javascript基础',
-        component: Stage1List
-      },
-      {
-        path: 'doc1',
-        name: 'javascript数据类型及检测方法',
-        component: Doc1
-      },
-      {
-        path: 'doc2',
-        name: '原型链',
-        component: Doc2
-      },
-      {
-        path: 'doc3',
-        name: 'AJAX',
-        component: Doc3
-      },
-      {
-        path: 'doc4',
-        name: 'this机制',
-        component: Doc4
-      },
-      {
-        path: 'doc5',
-        name: 'vue数据绑定原理',
-        component: Doc5
-      },
-      {
-        path: 'doc6',
-        name: 'vue虚拟DOM原理',
-        component: Doc6
-      },
-      {
-        path: 'doc7',
-        name: 'javascript面向对象编程',
-        component: Doc7
-      },
-      {
-        path: 'doc8',
-        name: 'es6+ 新特性',
-        component: Doc8
-      },
+        {
+          path: '',
+          name: 'javascript基础',
+          component: Stage1List
+        },
+        {
+          path: 'doc1',
+          name: 'javascript数据类型及检测方法',
+          component: Doc1
+        },
+        {
+          path: 'doc2',
+          name: '原型链',
+          component: Doc2
+        },
+        {
+          path: 'doc3',
+          name: 'AJAX',
+          component: Doc3
+        },
+        {
+          path: 'doc4',
+          name: 'this机制',
+          component: Doc4
+        },
+        {
+          path: 'doc5',
+          name: 'vue数据绑定原理',
+          component: Doc5
+        },
+        {
+          path: 'doc6',
+          name: 'vue虚拟DOM原理',
+          component: Doc6
+        },
+        {
+          path: 'doc7',
+          name: 'javascript面向对象编程',
+          component: Doc7
+        },
+        {
+          path: 'doc8',
+          name: 'es6+ 新特性',
+          component: Doc8
+        },
+        {
+          path: 'doc9',
+          name: '代码执行顺序',
+          component: Doc9
+        }
       ]
     },
     {
