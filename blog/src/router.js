@@ -14,6 +14,7 @@ import Doc6 from './views/stage1/Doc6.vue'
 import Doc7 from './views/stage1/Doc7.vue'
 import Doc8 from './views/stage1/Doc8.vue'
 import Doc9 from './views/stage1/Doc9.vue'
+import Doc10 from './views/stage1/Doc10.vue'
 
 import Stage2List from './views/stage2/Stage2List.vue'
 import Demo1 from './views/stage2/Demo1.vue'
@@ -88,6 +89,11 @@ export default new Router({
           path: 'doc9',
           name: '代码执行顺序',
           component: Doc9
+        },
+        {
+          path: 'doc10',
+          name: '闭包',
+          component: Doc10
         }
       ]
     },

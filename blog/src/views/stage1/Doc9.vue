@@ -82,6 +82,30 @@
       ];
     </code></pre>
     <p class="pt-4">8.事例代码执行完毕</p>
+    <p class="pt-5">事例2:</p>
+    <pre class="bg-dark text-light"><code>
+      var scope = "global scope";
+      function checkscope(){
+          var scope = "local scope";
+          function f(){
+              return scope;
+          }
+          return f;
+      }
+
+      var foo = checkscope();
+      foo();
+    </code></pre>
+    <ol>
+      <li>进入全局代码，创建全局执行上下文，全局执行上下文压入执行上下文栈</li>
+      <li>全局执行上下文初始化</li>
+      <li>执行 checkscope 函数，创建 checkscope 函数执行上下文，checkscope 执行上下文被压入执行上下文栈</li>
+      <li>checkscope 执行上下文初始化，创建变量对象、作用域链、this等</li>
+      <li>checkscope 函数执行完毕，checkscope 执行上下文从执行上下文栈中弹出</li>
+      <li>执行 f 函数，创建 f 函数执行上下文，f 执行上下文被压入执行上下文栈</li>
+      <li>f 执行上下文初始化，创建变量对象、作用域链、this等</li>
+      <li>f 函数执行完毕，f 函数上下文从执行上下文栈中弹出</li>
+    </ol>
 	</div>
 </template>
 
