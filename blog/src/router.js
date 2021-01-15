@@ -15,6 +15,7 @@ import Doc7 from './views/stage1/Doc7.vue'
 import Doc8 from './views/stage1/Doc8.vue'
 import Doc9 from './views/stage1/Doc9.vue'
 import Doc10 from './views/stage1/Doc10.vue'
+import Doc11 from './views/stage1/Doc11.vue'
 
 import Stage2List from './views/stage2/Stage2List.vue'
 import Demo1 from './views/stage2/Demo1.vue'
@@ -94,6 +95,11 @@ export default new Router({
           path: 'doc10',
           name: '闭包',
           component: Doc10
+        },
+        {
+          path: 'doc11',
+          name: '创建对象的多种方式',
+          component: Doc11
         }
       ]
     },
